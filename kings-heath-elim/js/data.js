@@ -231,19 +231,50 @@ const CHURCH_DATA = {
     }
   ],
 
-  /* ---- Events ---- */
+  /* ---- Weekly Regular Events (term time only) ---- */
+  weeklyEvents: [
+    {
+      id: "we1",
+      day: "Wed",
+      time: "9:30 – 11:00am",
+      type: "Families",
+      title: "Rainbow Stay & Play",
+      desc: "A fun drop-in for babies, toddlers and their parents or carers. Come for play, chat and a cuppa!",
+      icon: "🌈"
+    },
+    {
+      id: "we2",
+      day: "Wed",
+      time: "6:00 – 7:00pm",
+      type: "Children",
+      title: "JK's Kids Club",
+      desc: "A brilliant weekly club for children with games, crafts and stories.",
+      icon: "⭐"
+    },
+    {
+      id: "we3",
+      day: "Thu",
+      time: "10:00 – 11:00am",
+      type: "Prayer",
+      title: "Prayer Meeting",
+      desc: "Join us to pray together for our church, community and the world. All welcome.",
+      icon: "🙏"
+    },
+    {
+      id: "we4",
+      day: "Fri",
+      time: "7:30 – 9:30pm",
+      type: "Youth",
+      title: "Youth Club",
+      desc: "A great space for young people to hang out, have fun and build friendships.",
+      icon: "🎮"
+    }
+  ],
+
+  /* ---- One-off Events ---- */
   events: [
     {
       id: "e1",
-      day: "21",
-      month: "Apr",
-      type: "Community",
-      title: "Easter Monday Community Lunch",
-      time: "12:30pm",
-      desc: "Free lunch for all. Everyone welcome."
-    },
-    {
-      id: "e2",
       day: "26",
       month: "Apr",
       type: "Youth",
@@ -252,7 +283,7 @@ const CHURCH_DATA = {
       desc: "Games, food and worship for ages 11–18."
     },
     {
-      id: "e3",
+      id: "e2",
       day: "3",
       month: "May",
       type: "Women",
@@ -261,7 +292,7 @@ const CHURCH_DATA = {
       desc: "Monthly gathering for women of all ages."
     },
     {
-      id: "e4",
+      id: "e3",
       day: "10",
       month: "May",
       type: "All Ages",
@@ -270,22 +301,13 @@ const CHURCH_DATA = {
       desc: "Bring a blanket and some food — let's celebrate together."
     },
     {
-      id: "e5",
+      id: "e4",
       day: "17",
       month: "May",
       type: "Prayer",
       title: "Night of Prayer",
       time: "7:30pm",
       desc: "An evening set aside for worship and intercession."
-    },
-    {
-      id: "e6",
-      day: "24",
-      month: "May",
-      type: "Training",
-      title: "Worship Team Workshop",
-      time: "2:00pm",
-      desc: "Open to all musicians and singers. Led by our worship director."
     }
   ]
 

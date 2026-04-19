@@ -3,56 +3,77 @@
    ============================================= */
 
 function injectNav(activePage) {
-  const pages = [
-    { label: 'Home',       href: '../index.html',              key: 'home' },
-    { label: 'Watch',      href: '../pages/watch.html',        key: 'watch' },
-    { label: 'Sermons',    href: '../pages/sermons.html',      key: 'sermons' },
-    { label: 'Worship',    href: '../pages/setlists.html',     key: 'setlists' },
-    { label: 'New Songs',  href: '../pages/new-songs.html',    key: 'new-songs' },
-    { label: 'Events',     href: '../pages/events.html',       key: 'events' },
-    { label: 'About',      href: '../pages/about.html',        key: 'about' },
-    { label: 'Contact',    href: '../pages/contact.html',      key: 'contact' },
-  ];
-
   const isRoot = activePage === 'home-root';
   const prefix = isRoot ? '' : '../';
   const activeKey = activePage === 'home-root' ? 'home' : activePage;
 
-  const rootPages = pages.map(p => ({
-    ...p,
-    href: isRoot ? p.href.replace('../', '') : p.href
-  }));
-
-  const linksHTML = rootPages.map(p => `
-    <a href="${p.href}" class="${activeKey === p.key ? 'active' : ''}">${p.label}</a>
-  `).join('');
-
-  const logoHref = isRoot ? 'index.html' : '../index.html';
-
   const html = `
     <nav class="site-nav">
       <div class="nav-inner">
-        <a href="${logoHref}" class="nav-logo">
+        <a href="${prefix}index.html" class="nav-logo">
           <div class="nav-logo-cross">✝</div>
           <div class="nav-logo-text">
             <span class="nav-logo-name">Kings Heath Elim</span>
             <span class="nav-logo-sub">Church</span>
           </div>
         </a>
-        <div class="nav-links">${linksHTML}</div>
-        <button class="nav-cta" onclick="location.href='${isRoot ? 'pages/contact.html' : '../pages/contact.html'}'">Plan Your Visit</button>
+        <div class="nav-links" id="nav-links">
+          <a href="${prefix}index.html" class="${activeKey === 'home' ? 'active' : ''}">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn ${['watch','sermons'].includes(activeKey) ? 'active' : ''}">Watch <span class="nav-chevron">▾</span></button>
+            <div class="nav-dropdown-menu">
+              <a href="${prefix}pages/watch.html">▶&nbsp; Live Stream</a>
+              <a href="${prefix}pages/sermons.html">📋&nbsp; Sermon Archive</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn ${['setlists','new-songs'].includes(activeKey) ? 'active' : ''}">Worship <span class="nav-chevron">▾</span></button>
+            <div class="nav-dropdown-menu">
+              <a href="${prefix}pages/setlists.html">🎵&nbsp; Set List History</a>
+              <a href="${prefix}pages/new-songs.html">⭐&nbsp; New Songs</a>
+            </div>
+          </div>
+          <a href="${prefix}pages/events.html" class="${activeKey === 'events' ? 'active' : ''}">Events</a>
+          <a href="${prefix}pages/whos-who.html" class="${activeKey === 'whos-who' ? 'active' : ''}">Who's Who</a>
+          <a href="${prefix}pages/about.html" class="${activeKey === 'about' ? 'active' : ''}">About</a>
+          <a href="${prefix}pages/contact.html" class="${activeKey === 'contact' ? 'active' : ''}">Contact</a>
+        </div>
+        <button class="nav-cta" onclick="location.href='${prefix}pages/contact.html'">Plan Your Visit</button>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
       </div>
       <div class="nav-drawer" id="nav-drawer">
-        ${rootPages.map(p => `<a href="${p.href}">${p.label}</a>`).join('')}
+        <a href="${prefix}index.html">Home</a>
+        <span class="drawer-group-label">Watch</span>
+        <a href="${prefix}pages/watch.html" class="drawer-sub">▶ Live Stream</a>
+        <a href="${prefix}pages/sermons.html" class="drawer-sub">📋 Sermon Archive</a>
+        <span class="drawer-group-label">Worship</span>
+        <a href="${prefix}pages/setlists.html" class="drawer-sub">🎵 Set List History</a>
+        <a href="${prefix}pages/new-songs.html" class="drawer-sub">⭐ New Songs</a>
+        <a href="${prefix}pages/events.html">Events</a>
+        <a href="${prefix}pages/whos-who.html">Who's Who</a>
+        <a href="${prefix}pages/about.html">About</a>
+        <a href="${prefix}pages/contact.html">Contact</a>
       </div>
     </nav>
   `;
 
   const el = document.getElementById('nav-placeholder');
   if (el) el.outerHTML = html;
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const drawer = document.getElementById('nav-drawer');
+  if (hamburger && drawer) {
+    hamburger.addEventListener('click', () => drawer.classList.toggle('open'));
+  }
+
+  document.querySelectorAll('.nav-dropdown').forEach(dd => {
+    const menu = dd.querySelector('.nav-dropdown-menu');
+    dd.addEventListener('mouseenter', () => menu.classList.add('open'));
+    dd.addEventListener('mouseleave', () => menu.classList.remove('open'));
+    dd.querySelector('.nav-dropdown-btn').addEventListener('click', () => menu.classList.toggle('open'));
+  });
 }
 
 function injectFooter(isRoot) {
@@ -79,7 +100,8 @@ function injectFooter(isRoot) {
               <li><a href="${prefix}pages/about.html">About the Church</a></li>
               <li><a href="${prefix}index.html#times">Service Times</a></li>
               <li><a href="${prefix}pages/contact.html">Plan Your Visit</a></li>
-              <li><a href="${prefix}pages/events.html">Upcoming Events</a></li>
+              <li><a href="${prefix}pages/events.html">What's On</a></li>
+              <li><a href="${prefix}pages/whos-who.html">Who's Who</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -96,7 +118,7 @@ function injectFooter(isRoot) {
             <h4>Contact</h4>
             <ul>
               <li><a href="mailto:${CHURCH_DATA.church.email}">${CHURCH_DATA.church.email}</a></li>
-              <li><a href="tel:${CHURCH_DATA.church.phone}">${CHURCH_DATA.church.phone}</a></li>
+              <li><a href="tel:01214442550">${CHURCH_DATA.church.phone}</a></li>
               <li><a href="${prefix}pages/contact.html">Send a Message</a></li>
             </ul>
           </div>

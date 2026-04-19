@@ -109,37 +109,37 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
-      date: "20",
+      date: "19",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
       theme: "Walking in the Light",
       songs: [
-        { title: "Holy is the Lord",      highlight: true,  artist: "Chris Tomlin",       youtubeId: "hVWBt8bfmCs" },
-        { title: "Your Love Never Fails", highlight: false, artist: "Jesus Culture",       youtubeId: "IoezWBPGRAc" },
-        { title: "Holy Forever",          highlight: true,  artist: "Chris Tomlin",       youtubeId: "IkHgxKemCRk" },
-        { title: "Praise (Be Lifted Up)", highlight: false, artist: "Elevation Worship",  youtubeId: "raFnjGVkHe8" },
-        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith", youtubeId: "GGFeo08LkcY" }
+        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",       youtubeId: "hVWBt8bfmCs" },
+        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",       youtubeId: "IoezWBPGRAc" },
+        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",        youtubeId: "IkHgxKemCRk" },
+        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",   youtubeId: "raFnjGVkHe8" },
+        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith",    youtubeId: "GGFeo08LkcY" }
       ]
     },
     {
       id: "wl2",
-      date: "13",
+      date: "12",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
       theme: "The God Who Pursues",
       songs: [
-        { title: "Reckless Love",                 highlight: true,  artist: "Cory Asbury",      youtubeId: null },
-        { title: "What A Friend We Have In Jesus",highlight: false, artist: "Traditional",       youtubeId: null },
-        { title: "Goodness of God",               highlight: true,  artist: "Bethel Music",     youtubeId: null },
-        { title: "Yet Not I But Through Christ",  highlight: false, artist: "CityAlight",       youtubeId: null },
-        { title: "The Blessing",                  highlight: false, artist: "Kari Jobe",        youtubeId: null }
+        { title: "Reckless Love",                  highlight: true,  artist: "Cory Asbury",   youtubeId: null },
+        { title: "What A Friend We Have In Jesus", highlight: false, artist: "Traditional",    youtubeId: null },
+        { title: "Goodness of God",                highlight: true,  artist: "Bethel Music",  youtubeId: null },
+        { title: "Yet Not I But Through Christ",   highlight: false, artist: "CityAlight",    youtubeId: null },
+        { title: "The Blessing",                   highlight: false, artist: "Kari Jobe",     youtubeId: null }
       ]
     },
     {
       id: "wl3",
-      date: "6",
+      date: "5",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
@@ -154,21 +154,21 @@ const CHURCH_DATA = {
     },
     {
       id: "wl4",
-      date: "30",
+      date: "29",
       month: "Mar",
       year: "2026",
       service: "Morning Service",
       theme: "Rest in a Restless World",
       songs: [
-        { title: "Turn Your Eyes Upon Jesus", highlight: true,  artist: "Traditional",     youtubeId: null },
-        { title: "Peace Like a River",        highlight: false, artist: "Traditional",     youtubeId: null },
-        { title: "Still",                     highlight: true,  artist: "Hillsong",        youtubeId: null },
-        { title: "In Christ Alone",           highlight: false, artist: "Keith Getty",     youtubeId: null }
+        { title: "Turn Your Eyes Upon Jesus", highlight: true,  artist: "Traditional", youtubeId: null },
+        { title: "Peace Like a River",        highlight: false, artist: "Traditional", youtubeId: null },
+        { title: "Still",                     highlight: true,  artist: "Hillsong",    youtubeId: null },
+        { title: "In Christ Alone",           highlight: false, artist: "Keith Getty", youtubeId: null }
       ]
     },
     {
       id: "wl5",
-      date: "23",
+      date: "22",
       month: "Mar",
       year: "2026",
       service: "Morning Service",

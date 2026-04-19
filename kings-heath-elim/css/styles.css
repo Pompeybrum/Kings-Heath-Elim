@@ -339,6 +339,14 @@ h4 { font-size: 18px; }
   align-items: center;
 }
 
+.hero-photo-bg {
+  position: absolute;
+  inset: 0;
+  background: url('/images/worship.jpg') center center / cover no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;

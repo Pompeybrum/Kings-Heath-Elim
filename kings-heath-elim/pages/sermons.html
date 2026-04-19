@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sermons · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .series-filter { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Teaching &amp; Preaching</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">Sermon <em style="color:var(--gold-light);">Archive</em></h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:480px; margin-top:12px;">Every sermon from Kings Heath Elim — watch, listen and download sermon notes.</p>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="series-filter" id="series-filter">
+        <button class="filter-pill active" data-series="all">All Series</button>
+      </div>
+      <div class="sermons-grid" id="sermons-grid"></div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    injectNav('sermons');
+    injectFooter(false);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const seriesSet = [...new Set(CHURCH_DATA.sermons.map(s => s.series))];
+      const filterBar = document.getElementById('series-filter');
+      seriesSet.forEach(series => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-pill';
+        btn.dataset.series = series;
+        btn.textContent = series;
+        filterBar.appendChild(btn);
+      });
+
+      filterBar.addEventListener('click', e => {
+        const btn = e.target.closest('.filter-pill');
+        if (!btn) return;
+        document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const selected = btn.dataset.series;
+        const grid = document.getElementById('sermons-grid');
+        const list = selected === 'all' ? CHURCH_DATA.sermons : CHURCH_DATA.sermons.filter(s => s.series === selected);
+        grid.innerHTML = list.map(s => `
+          <div class="sermon-card">
+            <div class="sermon-card-thumb">
+              <a href="https://www.youtube.com/watch?v=${s.youtubeId}" target="_blank" rel="noopener">
+                <div class="sermon-play-btn">▶</div>
+              </a>
+            </div>
+            <div class="sermon-card-body">
+              <div class="sermon-series">${s.series}</div>
+              <div class="sermon-title">${s.title}</div>
+              <div class="sermon-meta">
+                <span>${s.speaker}</span>
+                <span>${s.date}</span>
+                <span>${s.scripture}</span>
+              </div>
+              ${s.hasNotes ? `<a href="${s.notesHref}" class="sermon-notes-link">📄 Sermon notes →</a>` : ''}
+            </div>
+          </div>
+        `).join('');
+      });
+    });
+  </script>
+</body>
+</html>

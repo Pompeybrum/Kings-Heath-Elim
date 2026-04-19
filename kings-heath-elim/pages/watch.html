@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Live · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="section stream-section" style="padding-top:52px;">
+    <div class="container">
+      <div class="section-label">Live &amp; On Demand</div>
+      <h1 class="section-title" style="font-size:clamp(30px,4vw,46px); margin-bottom:8px;">Watch Online</h1>
+      <p class="section-sub" style="margin-bottom:36px;">Join our live stream every Sunday at 10:30am, or catch up on any service you've missed.</p>
+      <div id="stream-container"></div>
+
+      <div style="margin-top:48px;">
+        <div class="section-label" style="color:rgba(255,255,255,0.5);">How to watch</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:20px; margin-top:16px;">
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-lg); padding:20px;">
+            <div style="font-size:24px; margin-bottom:10px;">📺</div>
+            <div style="font-family:var(--font-display); font-size:16px; color:white; margin-bottom:6px;">Live Sunday</div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.5);">Stream goes live at 10:30am every Sunday morning.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-lg); padding:20px;">
+            <div style="font-size:24px; margin-bottom:10px;">🔔</div>
+            <div style="font-family:var(--font-display); font-size:16px; color:white; margin-bottom:6px;">Subscribe</div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.5);">Subscribe to our YouTube channel to get notified when we go live.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-lg); padding:20px;">
+            <div style="font-size:24px; margin-bottom:10px;">📱</div>
+            <div style="font-family:var(--font-display); font-size:16px; color:white; margin-bottom:6px;">Any Device</div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.5);">Watch on phone, tablet, laptop or smart TV via YouTube.</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-lg); padding:20px;">
+            <div style="font-size:24px; margin-bottom:10px;">💬</div>
+            <div style="font-family:var(--font-display); font-size:16px; color:white; margin-bottom:6px;">Join the Chat</div>
+            <div style="font-size:13px; color:rgba(255,255,255,0.5);">During the live stream you can chat with other viewers on YouTube.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-label">Catch Up</div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+        <h2 class="section-title" style="margin:0;">Recent Sermons</h2>
+        <a href="sermons.html" class="btn btn-ghost">Full Archive →</a>
+      </div>
+      <div class="sermons-grid" id="sermons-grid"></div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    injectNav('watch');
+    injectFooter(false);
+  </script>
+</body>
+</html>

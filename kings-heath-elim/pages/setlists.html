@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worship Sets · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Worship &amp; Music</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">Worship <em style="color:var(--gold-light);">Set History</em></h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:500px; margin-top:12px;">A record of every song we've sung together in our Sunday services. Great for worship teams, families and anyone who wants to find that song from last week!</p>
+    </div>
+  </section>
+
+  <section class="section setlists-section">
+    <div class="container">
+      <div class="setlist-filters" id="setlist-filters">
+        <button class="filter-pill setlist-filter active" data-month="all">All</button>
+        <button class="filter-pill setlist-filter" data-month="Apr">April</button>
+        <button class="filter-pill setlist-filter" data-month="Mar">March</button>
+        <button class="filter-pill setlist-filter" data-month="Feb">February</button>
+        <button class="filter-pill setlist-filter" data-month="Jan">January</button>
+      </div>
+      <div id="setlists-container"></div>
+    </div>
+  </section>
+
+  <!-- Song search -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-label">Find a Song</div>
+      <h2 class="section-title" style="margin-bottom:16px;">Search for a Song</h2>
+      <p style="font-size:15px; color:var(--text-muted); margin-bottom:24px;">Can't remember when we sang a particular song? Search below.</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; max-width:500px;">
+        <input type="text" id="song-search" placeholder="e.g. Way Maker, Goodness of God..." style="flex:1; min-width:200px; padding:12px 18px; border:2px solid rgba(0,0,0,0.1); border-radius:50px; font-size:15px; outline:none; font-family:var(--font-body);" />
+        <button class="btn btn-primary" onclick="searchSongs()">Search</button>
+      </div>
+      <div id="song-results" style="margin-top:24px;"></div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    injectNav('setlists');
+    injectFooter(false);
+
+    function searchSongs() {
+      const query = document.getElementById('song-search').value.trim().toLowerCase();
+      const results = document.getElementById('song-results');
+      if (!query) { results.innerHTML = ''; return; }
+
+      const matches = [];
+      CHURCH_DATA.setlists.forEach(sl => {
+        sl.songs.forEach(song => {
+          if (song.title.toLowerCase().includes(query)) {
+            matches.push({ song: song.title, date: `${sl.date} ${sl.month} ${sl.year}`, service: sl.service, theme: sl.theme });
+          }
+        });
+      });
+
+      if (matches.length === 0) {
+        results.innerHTML = '<p style="color:var(--text-muted);">No results found. We may not have that song in our records yet.</p>';
+      } else {
+        results.innerHTML = `
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:12px;">${matches.length} result${matches.length !== 1 ? 's' : ''} found</p>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            ${matches.map(m => `
+              <div style="background:var(--gold-pale); border:1px solid var(--border); border-radius:var(--radius-md); padding:14px 18px; display:flex; gap:16px; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+                <div>
+                  <div style="font-family:var(--font-display); font-size:16px; color:var(--deep);">${m.song}</div>
+                  <div style="font-size:13px; color:var(--text-muted); margin-top:3px;">${m.service} · ${m.theme}</div>
+                </div>
+                <div style="font-size:13px; font-weight:700; color:var(--gold);">${m.date}</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+    }
+
+    document.getElementById('song-search').addEventListener('keydown', e => {
+      if (e.key === 'Enter') searchSongs();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .team-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:32px; margin-bottom:48px; }
+    .team-card { text-align:center; }
+    .team-photo { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:top; border-radius:var(--radius-xl); margin-bottom:14px; box-shadow:var(--shadow-md); display:block; }
+    .team-name { font-family:var(--font-display); font-size:22px; color:var(--deep); margin-bottom:4px; }
+    .team-role { font-size:12px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+    .team-desc { font-size:13px; color:var(--text-muted); line-height:1.6; }
+    .session-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px; }
+    .session-card { background:white; border:1px solid rgba(0,0,0,0.06); border-radius:var(--radius-lg); padding:20px 16px; text-align:center; box-shadow:var(--shadow-sm); }
+    .session-photo { width:84px; height:84px; object-fit:cover; object-position:top; border-radius:50%; margin:0 auto 10px; display:block; box-shadow:var(--shadow-sm); }
+    .session-initials { width:84px; height:84px; border-radius:50%; background:var(--gold-pale); border:2px solid var(--border); margin:0 auto 10px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:26px; color:var(--gold); }
+    .session-name { font-family:var(--font-display); font-size:16px; color:var(--deep); margin-bottom:3px; }
+    .session-role { font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Our Story</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">About <em style="color:var(--gold-light);">Our Church</em></h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:520px; margin-top:12px;">A warm, Spirit-filled community in the heart of Kings Heath, Birmingham.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT & PHOTO -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-block">
+          <img src="../images/church.jpg" alt="Kings Heath Elim Church building" style="width:100%; height:420px; object-fit:cover; border-radius:var(--radius-xl); box-shadow:var(--shadow-md);" />
+          <div class="about-stat-strip">
+            <div class="about-stat">
+              <div class="about-stat-num">60+</div>
+              <div class="about-stat-label">Members &amp; regular attenders</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">B14</div>
+              <div class="about-stat-label">Heart of Kings Heath</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">All ages</div>
+              <div class="about-stat-label">Young to young at heart</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">Rooted in Kings Heath,<br>Reaching the World</h2>
+          <p style="color:var(--text-muted); margin-bottom:20px; font-size:15px; line-height:1.8;">Kings Heath Elim is a Pentecostal church with deep roots in the local community. We're a place where people encounter God, find friendship and discover their purpose.</p>
+          <p style="color:var(--text-muted); margin-bottom:28px; font-size:15px; line-height:1.8;">We're part of the Elim Pentecostal Church, one of the UK's fastest-growing church movements, with a passion for the Holy Spirit, the Word of God, and reaching our community with the love of Jesus.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon">📖</div>
+              <div><div class="about-value-title">Scripture</div><div class="about-value-desc">We believe the Bible is God's Word — inspired, authoritative and life-giving.</div></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🔥</div>
+              <div><div class="about-value-title">Spirit</div><div class="about-value-desc">We welcome the Holy Spirit's work in and through us — in worship, prayer and daily life.</div></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🤝</div>
+              <div><div class="about-value-title">Community</div><div class="about-value-desc">We're better together. Life is meant to be lived in relationship with God and one another.</div></div>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🌍</div>
+              <div><div class="about-value-title">Mission</div><div class="about-value-desc">We're called to serve our neighbourhood and beyond — locally and globally.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASTORAL TEAM -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-label">Meet the Team</div>
+      <h2 class="section-title" style="margin-bottom:8px;">Our Leadership</h2>
+      <p style="font-size:15px; color:var(--text-muted); margin-bottom:36px; max-width:500px;">Our pastors and leadership team are here to serve the church and the Kings Heath community.</p>
+
+      <h3 style="font-family:var(--font-display); font-size:20px; color:var(--deep); margin-bottom:24px; padding-bottom:10px; border-bottom:2px solid var(--border);">Pastoral Team</h3>
+      <div class="team-grid">
+        <!-- Left half of pastors.png = Pastor Claire & Tony -->
+        <div class="team-card">
+          <div style="width:100%; aspect-ratio:4/5; border-radius:var(--radius-xl); margin-bottom:14px; box-shadow:var(--shadow-md); overflow:hidden; position:relative;">
+            <img src="../images/pastors.png" alt="Pastor Claire and Tony" style="position:absolute; left:0; top:0; width:200%; height:100%; object-fit:cover; object-position:left top;" />
+          </div>
+          <div class="team-name">Pastor Claire</div>
+          <div class="team-role">Senior Pastor</div>
+          <p class="team-desc">Senior pastor of Kings Heath Elim, leading the church with a heart for the community and a passion for the Holy Spirit.</p>
+        </div>
+        <!-- Right half of pastors.png = Pastor Jonathan & Lavinia -->
+        <div class="team-card">
+          <div style="width:100%; aspect-ratio:4/5; border-radius:var(--radius-xl); margin-bottom:14px; box-shadow:var(--shadow-md); overflow:hidden; position:relative;">
+            <img src="../images/pastors.png" alt="Pastor Jonathan and Lavinia" style="position:absolute; right:0; top:0; width:200%; height:100%; object-fit:cover; object-position:right top;" />
+          </div>
+          <div class="team-name">Pastor Jonathan</div>
+          <div class="team-role">Youth &amp; Worship Pastor</div>
+          <p class="team-desc">Leading our youth ministry and worship team, Jonathan brings energy and creativity to everything he does.</p>
+        </div>
+      </div>
+
+      <!-- Church Session -->
+      <h3 style="font-family:var(--font-display); font-size:20px; color:var(--deep); margin-bottom:24px; padding-bottom:10px; border-bottom:2px solid var(--border);">Church Session &amp; Deacons</h3>
+      <div class="session-grid">
+
+        <!-- Dela — left third of session.png -->
+        <div class="session-card">
+          <div style="width:84px; height:84px; border-radius:50%; margin:0 auto 10px; overflow:hidden; position:relative; box-shadow:var(--shadow-sm);">
+            <img src="../images/session.png" alt="Dela" style="position:absolute; left:0; top:0; width:300%; height:100%; object-fit:cover; object-position:left top;" />
+          </div>
+          <div class="session-name">Dela</div>
+          <div class="session-role">Safeguarding Lead</div>
+        </div>
+
+        <!-- Wendy — centre third of session.png -->
+        <div class="session-card">
+          <div style="width:84px; height:84px; border-radius:50%; margin:0 auto 10px; overflow:hidden; position:relative; box-shadow:var(--shadow-sm);">
+            <img src="../images/session.png" alt="Wendy" style="position:absolute; left:-100%; top:0; width:300%; height:100%; object-fit:cover; object-position:center top;" />
+          </div>
+          <div class="session-name">Wendy</div>
+          <div class="session-role">Deacon</div>
+        </div>
+
+        <!-- Dawn — right third of session.png -->
+        <div class="session-card">
+          <div style="width:84px; height:84px; border-radius:50%; margin:0 auto 10px; overflow:hidden; position:relative; box-shadow:var(--shadow-sm);">
+            <img src="../images/session.png" alt="Dawn" style="position:absolute; right:0; top:0; width:300%; height:100%; object-fit:cover; object-position:right top;" />
+          </div>
+          <div class="session-name">Dawn</div>
+          <div class="session-role">Safeguarding Deputy</div>
+        </div>
+
+        <!-- Peter — no photo -->
+        <div class="session-card">
+          <div class="session-initials">P</div>
+          <div class="session-name">Peter</div>
+          <div class="session-role">Deacon</div>
+        </div>
+
+        <!-- Eleanor — no photo -->
+        <div class="session-card">
+          <div class="session-initials">E</div>
+          <div class="session-name">Eleanor</div>
+          <div class="session-role">Session Member</div>
+        </div>
+
+        <!-- Steve — no photo -->
+        <div class="session-card">
+          <div class="session-initials">S</div>
+          <div class="session-name">Steve</div>
+          <div class="session-role">Session Member</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white" style="padding-top:0;">
+    <div class="container">
+      <div style="background:var(--deep); border-radius:var(--radius-xl); padding:40px; text-align:center; color:white;">
+        <div style="font-size:32px; margin-bottom:12px;">👋</div>
+        <h3 style="color:white; margin-bottom:8px;">Want to get in touch with our team?</h3>
+        <p style="color:rgba(255,255,255,0.6); font-size:15px; margin-bottom:20px; max-width:400px; margin-left:auto; margin-right:auto;">We'd love to hear from you — whether you have a question, need prayer, or want to find out more about the church.</p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>injectNav('about'); injectFooter(false);</script>
+</body>
+</html>

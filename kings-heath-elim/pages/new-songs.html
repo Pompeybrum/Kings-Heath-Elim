@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="New Worship Songs — Listen at home and come ready to sing on Sunday at Kings Heath Elim." />
+  <title>New Worship Songs · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .new-song-card {
+      background: white;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0,0,0,0.05);
+      margin-bottom: 28px;
+      transition: box-shadow var(--transition);
+    }
+    .new-song-card:hover { box-shadow: var(--shadow-md); }
+
+    .song-video-wrap {
+      aspect-ratio: 16/9;
+      background: #000;
+      position: relative;
+    }
+    .song-video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .song-info {
+      padding: 24px 28px;
+    }
+    .song-info-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .song-title-block h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--deep);
+      margin-bottom: 4px;
+    }
+    .song-artist {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .song-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .song-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: var(--sage-light);
+      color: var(--sage);
+      border: 1px solid rgba(107,143,113,0.3);
+      padding: 4px 12px;
+      border-radius: 50px;
+    }
+    .song-meta-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .song-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .song-meta-item strong { color: var(--deep); }
+    .song-notes {
+      background: var(--gold-pale);
+      border-left: 3px solid var(--gold);
+      padding: 12px 16px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 14px;
+      color: var(--deep);
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .song-added {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 700px) {
+      .two-col-grid { grid-template-columns: 1fr; }
+      .song-info { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Worship at Home</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">New <em style="color:var(--gold-light);">Worship Songs</em></h1>
+      <p style="color:rgba(255,255,255,0.7); font-size:16px; max-width:520px; margin-top:12px; line-height:1.75;">
+        We're introducing new songs into our Sunday worship. Listen to them here during the week so you can come ready to sing on Sunday — the more familiar they are, the more freely you can worship!
+      </p>
+    </div>
+  </section>
+
+  <!-- WELCOME NOTE -->
+  <div style="background:var(--gold-pale); border-top:3px solid var(--gold); border-bottom:3px solid var(--gold); padding:20px 24px; text-align:center;">
+    <p style="font-family:var(--font-display); font-size:18px; font-style:italic; color:var(--deep); max-width:600px; margin:0 auto;">
+      "Sing to him a new song; play skillfully, and shout for joy." — <em style="color:var(--gold); font-style:normal;">Psalm 33:3</em>
+    </p>
+  </div>
+
+  <!-- SONGS LIST -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-label">Currently Learning</div>
+      <h2 class="section-title" style="margin-bottom:8px;">Songs We're Introducing</h2>
+      <p style="font-size:15px; color:var(--text-muted); margin-bottom:36px; max-width:540px;">These are songs we're bringing into our Sunday morning worship. Watch and listen below — we've added notes from our worship team to help you get familiar.</p>
+
+      <div id="new-songs-list"></div>
+    </div>
+  </section>
+
+  <!-- TIP SECTION -->
+  <section class="section bg-white" style="padding-top:0;">
+    <div class="container">
+      <div style="background:var(--deep); border-radius:var(--radius-xl); padding:40px; color:white;">
+        <div class="section-label" style="color:var(--gold-light);">Tips for Worship</div>
+        <h2 style="color:white; margin-bottom:24px;">Making the Most of Worship at Home</h2>
+        <div class="two-col-grid">
+          <div style="display:flex; gap:14px;">
+            <div style="font-size:28px; flex-shrink:0;">🎧</div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:17px; color:white; margin-bottom:6px;">Listen actively</div>
+              <div style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.7;">Don't just have it on in the background — find a quiet moment, put headphones in, and really listen to the words.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:14px;">
+            <div style="font-size:28px; flex-shrink:0;">🙏</div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:17px; color:white; margin-bottom:6px;">Make it personal</div>
+              <div style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.7;">Let the lyrics become your own prayer. Worship isn't just singing — it's an expression of your heart to God.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:14px;">
+            <div style="font-size:28px; flex-shrink:0;">🎵</div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:17px; color:white; margin-bottom:6px;">Sing along</div>
+              <div style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.7;">Even at home! The more you sing the melody, the more natural it'll feel on Sunday morning together.</div>
+            </div>
+          </div>
+          <div style="display:flex; gap:14px;">
+            <div style="font-size:28px; flex-shrink:0;">📖</div>
+            <div>
+              <div style="font-family:var(--font-display); font-size:17px; color:white; margin-bottom:6px;">Look up the scripture</div>
+              <div style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.7;">Most worship songs are rooted in Bible passages. Finding the source verses deepens the meaning of the words.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINK TO SETLISTS -->
+  <section class="section setlists-section" style="padding:40px 0;">
+    <div class="container" style="text-align:center;">
+      <h3 style="margin-bottom:8px;">Want to see what we've been singing?</h3>
+      <p style="font-size:15px; color:var(--text-muted); margin-bottom:20px;">Browse our full worship set history — every Sunday going back months.</p>
+      <a href="setlists.html" class="btn btn-primary">View Set List History →</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    injectNav('new-songs');
+    injectFooter(false);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const list = document.getElementById('new-songs-list');
+      if (!list || !CHURCH_DATA.newSongs) return;
+
+      list.innerHTML = CHURCH_DATA.newSongs.map(song => `
+        <div class="new-song-card">
+          <div class="song-video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/${song.youtubeId}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="${song.title} — ${song.artist}">
+            </iframe>
+          </div>
+          <div class="song-info">
+            <div class="song-info-top">
+              <div class="song-title-block">
+                <h3>${song.title}</h3>
+                <div class="song-artist">${song.artist}</div>
+              </div>
+              <div class="song-tags">
+                ${song.tags.map(t => `<span class="song-tag">${t}</span>`).join('')}
+              </div>
+            </div>
+            <div class="song-meta-row">
+              <div class="song-meta-item">🎵 Key: <strong>${song.key}</strong></div>
+              <div class="song-meta-item">⏱ Tempo: <strong>${song.tempo}</strong></div>
+            </div>
+            <div class="song-notes">${song.notes}</div>
+            <div class="song-added">Added to our worship: ${song.addedDate}</div>
+          </div>
+        </div>
+      `).join('');
+    });
+  </script>
+</body>
+</html>

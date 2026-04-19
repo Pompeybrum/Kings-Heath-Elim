@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Visit · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">We'd Love to Hear From You</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">Get in <em style="color:var(--gold-light);">Touch</em></h1>
+    </div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label">Send a Message</div>
+          <h2 class="section-title" style="margin-bottom:24px;">We'd love to hear from you</h2>
+          <form class="contact-form" id="contact-form">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" placeholder="Sarah" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" placeholder="Smith" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="sarah@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="reason">What's this about?</label>
+              <select id="reason">
+                <option value="">Please select...</option>
+                <option>Planning a first visit</option>
+                <option>General enquiry</option>
+                <option>Prayer request</option>
+                <option>Events &amp; bookings</option>
+                <option>Pastoral support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea id="message" placeholder="Hi, I'd love to find out more about..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="section-label">Find Us</div>
+          <h2 class="section-title" style="margin-bottom:24px;">Come and visit</h2>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">Address</div>
+                <div class="contact-info-value">Kings Heath Elim Church<br>159 Allen's Croft Road<br>Kings Heath, Birmingham<br>B14 6RP</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label">Service Times</div>
+                <div class="contact-info-value">Sunday 10:30am</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value">clairekhelim@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value">0121 444 2550</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; background:var(--deep); border-radius:var(--radius-lg); padding:24px;">
+            <div style="font-family:var(--font-display); font-size:18px; color:white; margin-bottom:8px;">New Here?</div>
+            <p style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.7; margin-bottom:16px;">First time visits can feel daunting. We'd love to help you feel prepared — drop us a message and we'll let you know what to expect, where to park, and how to find us.</p>
+            <div style="font-size:13px; color:var(--gold-light); font-weight:700;">No dress code · No pressure · Just come as you are ✝</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>injectNav('contact'); injectFooter(false);</script>
+</body>
+</html>

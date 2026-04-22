@@ -96,15 +96,6 @@ const CHURCH_DATA = {
       ]
     }
   ],
-      songs: [
-        { title: "Spirit of the Living God", highlight: true,  artist: "Vertical Worship", youtubeId: null },
-        { title: "Move",                     highlight: false, artist: "MercyMe",          youtubeId: null },
-        { title: "Fire of Your Love",        highlight: false, artist: "Nate Hulfish",     youtubeId: null },
-        { title: "Resurrecting",             highlight: false, artist: "Elevation Worship",youtubeId: null },
-        { title: "Glorious Day",             highlight: true,  artist: "Passion",          youtubeId: null }
-      ]
-    }
-  ],
 
   /* ---- New Worship Songs (for learning at home) ---- */
   newSongs: [

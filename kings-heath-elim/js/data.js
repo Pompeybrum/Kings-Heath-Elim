@@ -42,8 +42,9 @@ const CHURCH_DATA = {
       title: "Holy Spirit Course — Week 2",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "20 Apr 2026",
+      date: "19 Apr 2026",
       scripture: "Acts 2:1-4",
+      verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: "dQw4w9WgXcQ",
       hasNotes: true,
       notesHref: "pages/sermon-notes.html"
@@ -53,52 +54,9 @@ const CHURCH_DATA = {
       title: "Holy Spirit Course — Week 1",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "13 Apr 2026",
+      date: "12 Apr 2026",
       scripture: "John 14:15-17",
-      youtubeId: "dQw4w9WgXcQ",
-      hasNotes: true,
-      notesHref: "pages/sermon-notes.html"
-    },
-    {
-      id: "s3",
-      title: "Faith That Moves Mountains",
-      series: "Foundations",
-      speaker: "Pastor Claire",
-      date: "6 Apr 2026",
-      scripture: "Matthew 17:20",
-      youtubeId: "dQw4w9WgXcQ",
-      hasNotes: false,
-      notesHref: null
-    },
-    {
-      id: "s4",
-      title: "Rest in a Restless World",
-      series: "Foundations",
-      speaker: "Pastor Claire",
-      date: "30 Mar 2026",
-      scripture: "Matthew 11:28-30",
-      youtubeId: "dQw4w9WgXcQ",
-      hasNotes: true,
-      notesHref: "pages/sermon-notes.html"
-    },
-    {
-      id: "s5",
-      title: "The Spirit-Filled Life",
-      series: "Foundations",
-      speaker: "Pastor Jonathan",
-      date: "23 Mar 2026",
-      scripture: "Acts 2:1-21",
-      youtubeId: "dQw4w9WgXcQ",
-      hasNotes: true,
-      notesHref: "pages/sermon-notes.html"
-    },
-    {
-      id: "s6",
-      title: "Called and Chosen",
-      series: "Foundations",
-      speaker: "Pastor Claire",
-      date: "16 Mar 2026",
-      scripture: "John 15:16",
+      verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: "dQw4w9WgXcQ",
       hasNotes: false,
       notesHref: null
@@ -113,66 +71,31 @@ const CHURCH_DATA = {
       month: "Apr",
       year: "2026",
       service: "Morning Service",
-      theme: "Walking in the Light",
+      theme: "Holy Spirit Course Week 2",
       songs: [
-        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",       youtubeId: "hVWBt8bfmCs" },
-        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",       youtubeId: "IoezWBPGRAc" },
-        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",        youtubeId: "IkHgxKemCRk" },
-        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",   youtubeId: "raFnjGVkHe8" },
-        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith",    youtubeId: "GGFeo08LkcY" }
+        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",      youtubeId: "hVWBt8bfmCs" },
+        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",      youtubeId: "IoezWBPGRAc" },
+        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",       youtubeId: "IkHgxKemCRk" },
+        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",  youtubeId: "raFnjGVkHe8" },
+        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith",   youtubeId: "GGFeo08LkcY" }
       ]
     },
     {
       id: "wl2",
-      date: "12",
-      month: "Apr",
-      year: "2026",
-      service: "Morning Service",
-      theme: "The God Who Pursues",
-      songs: [
-        { title: "Reckless Love",                  highlight: true,  artist: "Cory Asbury",   youtubeId: null },
-        { title: "What A Friend We Have In Jesus", highlight: false, artist: "Traditional",    youtubeId: null },
-        { title: "Goodness of God",                highlight: true,  artist: "Bethel Music",  youtubeId: null },
-        { title: "Yet Not I But Through Christ",   highlight: false, artist: "CityAlight",    youtubeId: null },
-        { title: "The Blessing",                   highlight: false, artist: "Kari Jobe",     youtubeId: null }
-      ]
-    },
-    {
-      id: "wl3",
       date: "5",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
-      theme: "Faith That Moves Mountains",
+      theme: "Holy Spirit Course Week 1",
       songs: [
-        { title: "Do It Again",           highlight: true,  artist: "Elevation Worship", youtubeId: null },
-        { title: "Cornerstone",           highlight: false, artist: "Hillsong Worship",  youtubeId: null },
-        { title: "What A Beautiful Name", highlight: true,  artist: "Hillsong Worship",  youtubeId: null },
-        { title: "Chain Breaker",         highlight: false, artist: "Zach Williams",     youtubeId: null },
-        { title: "Surrounded",            highlight: false, artist: "Michael W. Smith",  youtubeId: null }
+        { title: "Happy Day",               highlight: true,  artist: "Tim Hughes",         youtubeId: "BOiIW8nrw5g" },
+        { title: "Praise",                  highlight: false, artist: "Elevation Worship",  youtubeId: "raFnjGVkHe8" },
+        { title: "This is Amazing Grace",   highlight: false, artist: "Phil Wickham",       youtubeId: "XFRjr_x-yxU" },
+        { title: "King of Kings",           highlight: true,  artist: "Hillsong Worship",   youtubeId: "dQl4izxPeNU" },
+        { title: "Trust in God",            highlight: false, artist: "Elevation Worship",  youtubeId: "QS04WbSnxok" }
       ]
-    },
-    {
-      id: "wl4",
-      date: "29",
-      month: "Mar",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Rest in a Restless World",
-      songs: [
-        { title: "Turn Your Eyes Upon Jesus", highlight: true,  artist: "Traditional", youtubeId: null },
-        { title: "Peace Like a River",        highlight: false, artist: "Traditional", youtubeId: null },
-        { title: "Still",                     highlight: true,  artist: "Hillsong",    youtubeId: null },
-        { title: "In Christ Alone",           highlight: false, artist: "Keith Getty", youtubeId: null }
-      ]
-    },
-    {
-      id: "wl5",
-      date: "22",
-      month: "Mar",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Pentecost Season",
+    }
+  ],
       songs: [
         { title: "Spirit of the Living God", highlight: true,  artist: "Vertical Worship", youtubeId: null },
         { title: "Move",                     highlight: false, artist: "MercyMe",          youtubeId: null },
@@ -234,6 +157,15 @@ const CHURCH_DATA = {
   /* ---- Weekly Regular Events (term time only) ---- */
   weeklyEvents: [
     {
+      id: "we0",
+      day: "Tue",
+      time: "10:00am (at church) & 8:00pm (Google Meet)",
+      type: "Course",
+      title: "Life Worth Living",
+      desc: "A 10-week course exploring what makes life truly worth living. In-person at church or join online. Running until late June.",
+      icon: "✨"
+    },
+    {
       id: "we1",
       day: "Wed",
       time: "9:30 – 11:00am",
@@ -275,39 +207,39 @@ const CHURCH_DATA = {
   events: [
     {
       id: "e1",
-      day: "26",
+      day: "22",
       month: "Apr",
-      type: "Youth",
-      title: "Youth Night",
-      time: "6:00pm",
-      desc: "Games, food and worship for ages 11–18."
+      type: "Course",
+      title: "Life Worth Living — Week 1",
+      time: "10:00am at church  ·  8:00pm on Google Meet",
+      desc: "Join us for the start of our 10-week Life Worth Living course. Two options — in person or online!"
     },
     {
       id: "e2",
-      day: "3",
-      month: "May",
-      type: "Women",
-      title: "Women's Breakfast",
-      time: "9:30am",
-      desc: "Monthly gathering for women of all ages."
+      day: "29",
+      month: "Apr",
+      type: "Course",
+      title: "Life Worth Living — Week 2",
+      time: "10:00am at church  ·  8:00pm on Google Meet",
+      desc: "Life Worth Living course continues. Both in-person and online sessions available."
     },
     {
       id: "e3",
-      day: "10",
-      month: "May",
-      type: "All Ages",
-      title: "Church Family Picnic",
-      time: "1:00pm",
-      desc: "Bring a blanket and some food — let's celebrate together."
+      day: "7",
+      month: "Jun",
+      type: "Guest Speaker",
+      title: "Marty Davison — Elim International Missions",
+      time: "10:30am",
+      desc: "We're delighted to welcome Marty Davison, Elim's International Missions Director, to preach on Sunday morning."
     },
     {
       id: "e4",
-      day: "17",
-      month: "May",
-      type: "Prayer",
-      title: "Night of Prayer",
-      time: "7:30pm",
-      desc: "An evening set aside for worship and intercession."
+      day: "20",
+      month: "Sep",
+      type: "Guest Speaker",
+      title: "Paul Hudson — Elim Regional Leader",
+      time: "10:30am",
+      desc: "A special Sunday morning as we welcome Paul Hudson, Elim Regional Leader, to Kings Heath Elim."
     }
   ]
 

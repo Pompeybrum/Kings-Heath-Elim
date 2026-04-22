@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .value-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+    }
+    .value-icon { font-size: 32px; margin-bottom: 12px; }
+    .value-title { font-family: var(--font-display); font-size: 18px; color: var(--deep); margin-bottom: 6px; }
+    .value-desc { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+    .vol-form {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(0,0,0,0.05);
+      max-width: 620px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Get Involved</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">Volunteer <em style="color:var(--gold-light);">With Us</em></h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:520px; margin-top:12px;">Serving isn't just helping out — it's how we belong, grow and build God's kingdom together right here in Kings Heath.</p>
+    </div>
+  </section>
+
+  <!-- WHY VOLUNTEER -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-label">Why Serve?</div>
+      <h2 class="section-title" style="margin-bottom:16px;">Volunteering is Belonging</h2>
+      <p style="font-size:16px; color:var(--text-muted); line-height:1.8; max-width:680px; margin-bottom:36px;">
+        At Kings Heath Elim, we believe that every person has been uniquely gifted by God — not just for their own benefit, but for the good of the whole church family and the community around us. When you serve, you're not just filling a rota slot. You're stepping into something that matters. You're building friendships, discovering your gifts, and playing your part in something much bigger than yourself.
+      </p>
+      <p style="font-size:16px; color:var(--text-muted); line-height:1.8; max-width:680px; margin-bottom:48px;">
+        This is kingdom work. Whether you're setting out chairs, leading worship, making someone feel welcome at the door, or keeping the building clean — every act of service is an act of love, and God sees it all.
+      </p>
+
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <div class="value-title">You Belong Here</div>
+          <div class="value-desc">Serving is one of the best ways to go from attending church to truly being part of the family.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌱</div>
+          <div class="value-title">Discover Your Gifts</div>
+          <div class="value-desc">God has wired you in a unique way. Serving helps you discover what you're built for and where you thrive.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">👑</div>
+          <div class="value-title">Kingdom Impact</div>
+          <div class="value-desc">Every act of service — big or small — contributes to something eternal. Your faithfulness matters.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">❤️</div>
+          <div class="value-title">Love in Action</div>
+          <div class="value-desc">Jesus came to serve, not to be served. When we volunteer, we follow His example and love our community well.</div>
+        </div>
+      </div>
+
+      <!-- SCRIPTURE QUOTE -->
+      <div style="background:var(--gold-pale); border-left:4px solid var(--gold); border-radius:0 var(--radius-lg) var(--radius-lg) 0; padding:20px 24px; max-width:600px; margin-bottom:0;">
+        <p style="font-family:var(--font-display); font-size:18px; font-style:italic; color:var(--deep); line-height:1.5; margin-bottom:8px;">"Each of you should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms."</p>
+        <p style="font-size:13px; font-weight:700; color:var(--gold);">1 Peter 4:10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER FORM -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-label">Sign Up</div>
+      <h2 class="section-title" style="margin-bottom:8px;">I'd Like to Get Involved</h2>
+      <p style="font-size:15px; color:var(--text-muted); margin-bottom:32px; max-width:480px;">Fill in the form below and someone from our team will be in touch to have a chat about how you can get involved.</p>
+
+      <div class="vol-form">
+        <form id="volunteer-form">
+          <div class="form-row" style="margin-bottom:16px;">
+            <div class="form-group">
+              <label for="vol-first">First name *</label>
+              <input type="text" id="vol-first" placeholder="Sarah" required />
+            </div>
+            <div class="form-group">
+              <label for="vol-last">Last name *</label>
+              <input type="text" id="vol-last" placeholder="Smith" required />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:16px;">
+            <label for="vol-email">Email address *</label>
+            <input type="email" id="vol-email" placeholder="sarah@example.com" required />
+          </div>
+
+          <div class="form-group" style="margin-bottom:16px;">
+            <label for="vol-phone">Phone number</label>
+            <input type="tel" id="vol-phone" placeholder="07700 000000" />
+          </div>
+
+          <div class="form-group" style="margin-bottom:16px;">
+            <label for="vol-team">Where would you like to help? *</label>
+            <select id="vol-team" required>
+              <option value="">Please select a team...</option>
+              <option value="Worship Team">Worship Team</option>
+              <option value="Tech Team">Tech Team</option>
+              <option value="Youth Team">Youth Team</option>
+              <option value="Cleaning Team">Cleaning Team</option>
+              <option value="Tea and Coffee Team">Tea and Coffee Team</option>
+              <option value="Welcome Team">Welcome Team</option>
+              <option value="Security Team">Security Team</option>
+              <option value="Not sure yet">Not sure yet — happy to chat</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom:24px;">
+            <label for="vol-message">Anything else you'd like to tell us?</label>
+            <textarea id="vol-message" placeholder="e.g. I play guitar, I'm available on Sunday mornings only, etc." style="min-height:90px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send My Expression of Interest</button>
+
+          <p style="font-size:12px; color:var(--text-muted); margin-top:14px; line-height:1.6;">
+            Your details will only be used to follow up about volunteering at Kings Heath Elim. We won't share your information with anyone else.
+          </p>
+        </form>
+        <div id="vol-success" style="display:none; text-align:center; padding:32px 0;">
+          <div style="font-size:48px; margin-bottom:12px;">🙌</div>
+          <h3 style="margin-bottom:8px;">Thank you!</h3>
+          <p style="color:var(--text-muted); font-size:15px;">We've received your expression of interest and someone will be in touch soon. We're so glad you want to get involved!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    injectNav('volunteer');
+    injectFooter(false);
+
+    document.getElementById('volunteer-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const first   = document.getElementById('vol-first').value;
+      const last    = document.getElementById('vol-last').value;
+      const email   = document.getElementById('vol-email').value;
+      const phone   = document.getElementById('vol-phone').value;
+      const team    = document.getElementById('vol-team').value;
+      const message = document.getElementById('vol-message').value;
+
+      // Build mailto link — sends to church email
+      const subject = encodeURIComponent(`Volunteer Expression of Interest — ${first} ${last}`);
+      const body = encodeURIComponent(
+        `New volunteer expression of interest:\n\n` +
+        `Name: ${first} ${last}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone || 'Not provided'}\n` +
+        `Team: ${team}\n` +
+        `Message: ${message || 'None'}\n`
+      );
+
+      window.location.href = `mailto:${CHURCH_DATA.church.email}?subject=${subject}&body=${body}`;
+
+      // Show success message
+      document.getElementById('volunteer-form').style.display = 'none';
+      document.getElementById('vol-success').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

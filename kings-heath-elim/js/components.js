@@ -35,7 +35,13 @@ function injectNav(activePage) {
           </div>
           <a href="${prefix}pages/events.html" class="${activeKey === 'events' ? 'active' : ''}">Events</a>
           <a href="${prefix}pages/whos-who.html" class="${activeKey === 'whos-who' ? 'active' : ''}">Who's Who</a>
-          <a href="${prefix}pages/about.html" class="${activeKey === 'about' ? 'active' : ''}">About</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn ${['about','volunteer'].includes(activeKey) ? 'active' : ''}">About <span class="nav-chevron">▾</span></button>
+            <div class="nav-dropdown-menu">
+              <a href="${prefix}pages/about.html">🏠&nbsp; About Us</a>
+              <a href="${prefix}pages/volunteer.html">🙋&nbsp; Volunteer</a>
+            </div>
+          </div>
           <a href="${prefix}pages/contact.html" class="${activeKey === 'contact' ? 'active' : ''}">Contact</a>
         </div>
         <button class="nav-cta" onclick="location.href='${prefix}pages/contact.html'">Plan Your Visit</button>
@@ -53,7 +59,9 @@ function injectNav(activePage) {
         <a href="${prefix}pages/new-songs.html" class="drawer-sub">⭐ New Songs</a>
         <a href="${prefix}pages/events.html">Events</a>
         <a href="${prefix}pages/whos-who.html">Who's Who</a>
-        <a href="${prefix}pages/about.html">About</a>
+        <span class="drawer-group-label">About</span>
+        <a href="${prefix}pages/about.html" class="drawer-sub">🏠 About Us</a>
+        <a href="${prefix}pages/volunteer.html" class="drawer-sub">🙋 Volunteer</a>
         <a href="${prefix}pages/contact.html">Contact</a>
       </div>
     </nav>
@@ -98,6 +106,7 @@ function injectFooter(isRoot) {
             <h4>Visit Us</h4>
             <ul>
               <li><a href="${prefix}pages/about.html">About the Church</a></li>
+              <li><a href="${prefix}pages/volunteer.html">Volunteer</a></li>
               <li><a href="${prefix}index.html#times">Service Times</a></li>
               <li><a href="${prefix}pages/contact.html">Plan Your Visit</a></li>
               <li><a href="${prefix}pages/events.html">What's On</a></li>

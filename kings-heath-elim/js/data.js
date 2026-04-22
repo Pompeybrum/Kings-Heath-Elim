@@ -46,8 +46,8 @@ const CHURCH_DATA = {
       scripture: "Acts 2:1-4",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: "dQw4w9WgXcQ",
-      hasNotes: true,
-      notesHref: "pages/sermon-notes.html"
+      hasNotes: false,
+      notesHref: null
     },
     {
       id: "s2",
@@ -180,7 +180,7 @@ const CHURCH_DATA = {
       time: "10:00 – 11:00am",
       type: "Prayer",
       title: "Prayer Meeting",
-      desc: "Join us to pray together for our church, community and the world. All welcome.",
+      desc: "Join us to pray together for our church, community and the world. All welcome — including school holidays.",
       icon: "🙏"
     },
     {
@@ -191,6 +191,15 @@ const CHURCH_DATA = {
       title: "Youth Club",
       desc: "A great space for young people to hang out, have fun and build friendships.",
       icon: "🎮"
+    },
+    {
+      id: "we5",
+      day: "Tue",
+      time: "9:00am",
+      type: "Community",
+      title: "Food Bank Breakfast",
+      desc: "2nd Tuesday of each month (3rd Tuesday in May). No session in August. Free breakfast — everyone welcome.",
+      icon: "🍳"
     }
   ],
 
@@ -198,24 +207,15 @@ const CHURCH_DATA = {
   events: [
     {
       id: "e1",
-      day: "22",
-      month: "Apr",
-      type: "Course",
-      title: "Life Worth Living — Week 1",
-      time: "10:00am at church  ·  8:00pm on Google Meet",
-      desc: "Join us for the start of our 10-week Life Worth Living course. Two options — in person or online!"
-    },
-    {
-      id: "e2",
       day: "29",
       month: "Apr",
       type: "Course",
-      title: "Life Worth Living — Week 2",
-      time: "10:00am at church  ·  8:00pm on Google Meet",
-      desc: "Life Worth Living course continues. Both in-person and online sessions available."
+      title: "Life Worth Living — Week 6 (morning) / Week 7 (evening)",
+      time: "10:00am at church (Wk 6)  ·  8:00pm on Google Meet (Wk 7)",
+      desc: "This week's Life Worth Living sessions — join us in person in the morning or online in the evening."
     },
     {
-      id: "e3",
+      id: "e2",
       day: "7",
       month: "Jun",
       type: "Guest Speaker",
@@ -224,7 +224,7 @@ const CHURCH_DATA = {
       desc: "We're delighted to welcome Marty Davison, Elim's International Missions Director, to preach on Sunday morning."
     },
     {
-      id: "e4",
+      id: "e3",
       day: "20",
       month: "Sep",
       type: "Guest Speaker",

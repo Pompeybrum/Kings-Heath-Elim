@@ -42,7 +42,13 @@ function injectNav(activePage) {
               <a href="${prefix}pages/volunteer.html">🙋&nbsp; Volunteer</a>
             </div>
           </div>
-          <a href="${prefix}pages/contact.html" class="${activeKey === 'contact' ? 'active' : ''}">Contact</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn ${['contact','support'].includes(activeKey) ? 'active' : ''}">Contact <span class="nav-chevron">▾</span></button>
+            <div class="nav-dropdown-menu">
+              <a href="${prefix}pages/contact.html">✉️&nbsp; Get in Touch</a>
+              <a href="${prefix}pages/support.html">💛&nbsp; Support Us</a>
+            </div>
+          </div>
         </div>
         <button class="nav-cta" onclick="location.href='${prefix}pages/contact.html'">Plan Your Visit</button>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
@@ -62,7 +68,9 @@ function injectNav(activePage) {
         <span class="drawer-group-label">About</span>
         <a href="${prefix}pages/about.html" class="drawer-sub">🏠 About Us</a>
         <a href="${prefix}pages/volunteer.html" class="drawer-sub">🙋 Volunteer</a>
-        <a href="${prefix}pages/contact.html">Contact</a>
+        <span class="drawer-group-label">Contact</span>
+        <a href="${prefix}pages/contact.html" class="drawer-sub">✉️ Get in Touch</a>
+        <a href="${prefix}pages/support.html" class="drawer-sub">💛 Support Us</a>
       </div>
     </nav>
   `;
@@ -140,6 +148,7 @@ function injectFooter(isRoot) {
               <li><a href="mailto:${CHURCH_DATA.church.email}">${CHURCH_DATA.church.email}</a></li>
               <li><a href="tel:01214442550">${CHURCH_DATA.church.phone}</a></li>
               <li><a href="${prefix}pages/contact.html">Send a Message</a></li>
+              <li><a href="${prefix}pages/support.html">Support Us</a></li>
             </ul>
           </div>
         </div>

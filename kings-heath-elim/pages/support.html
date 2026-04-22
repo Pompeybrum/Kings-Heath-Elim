@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Us · Kings Heath Elim</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .give-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+    .give-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .give-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .give-icon { font-size: 36px; margin-bottom: 14px; }
+    .give-title { font-family: var(--font-display); font-size: 20px; color: var(--deep); margin-bottom: 8px; }
+    .give-desc { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
+    .bank-detail {
+      background: var(--gold-pale);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .bank-label { color: var(--text-muted); font-weight: 600; }
+    .bank-value { color: var(--deep); font-weight: 700; font-family: monospace; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero" style="min-height:auto; padding:52px 24px 44px;">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="hero-eyebrow">Give &amp; Support</div>
+      <h1 style="color:white; font-size:clamp(32px,4vw,52px);">Support <em style="color:var(--gold-light);">Kings Heath Elim</em></h1>
+      <p style="color:rgba(255,255,255,0.65); font-size:16px; max-width:520px; margin-top:12px;">Your generosity makes a real difference — to our church family, our community and the mission of God's kingdom in Kings Heath and beyond.</p>
+    </div>
+  </section>
+
+  <!-- WHY GIVE -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-label">Why Give?</div>
+      <h2 class="section-title" style="margin-bottom:16px;">Generosity is a Kingdom Value</h2>
+      <p style="font-size:16px; color:var(--text-muted); line-height:1.8; max-width:680px; margin-bottom:24px;">
+        Giving is one of the most powerful ways we can participate in what God is doing. When we give, we're not just paying bills — we're investing in lives being changed, communities being served, and the gospel being shared.
+      </p>
+      <p style="font-size:16px; color:var(--text-muted); line-height:1.8; max-width:680px; margin-bottom:40px;">
+        Every gift — however large or small — goes directly towards the work of Kings Heath Elim: our Sunday services, community outreach, youth and children's work, and supporting those in need right here in Birmingham.
+      </p>
+
+      <div style="background:var(--gold-pale); border-left:4px solid var(--gold); border-radius:0 var(--radius-lg) var(--radius-lg) 0; padding:20px 24px; max-width:600px; margin-bottom:48px;">
+        <p style="font-family:var(--font-display); font-size:18px; font-style:italic; color:var(--deep); line-height:1.5; margin-bottom:8px;">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."</p>
+        <p style="font-size:13px; font-weight:700; color:var(--gold);">2 Corinthians 9:7</p>
+      </div>
+
+      <!-- WAYS TO GIVE -->
+      <div class="section-label">Ways to Give</div>
+      <h2 class="section-title" style="margin-bottom:28px;">Choose How You'd Like to Give</h2>
+
+      <div class="give-grid">
+
+        <!-- Online giving -->
+        <div class="give-card">
+          <div class="give-icon">💳</div>
+          <div class="give-title">Give Online</div>
+          <div class="give-desc">The quickest way to give — securely processed through Stewardship, the trusted Christian giving platform.</div>
+          <a href="https://square.link/u/JZrR9opU" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Donate Now →
+          </a>
+          <p style="font-size:11px; color:var(--text-muted); margin-top:10px;">Powered by Square. Secure card payment.</p>
+        </div>
+
+        <!-- Bank transfer -->
+        <div class="give-card">
+          <div class="give-icon">🏦</div>
+          <div class="give-title">Bank Transfer</div>
+          <div class="give-desc">Want to set up a regular standing order directly to the church? Get in touch and we'll send you the details.</div>
+          <a href="contact.html" class="btn btn-ghost" style="width:100%; justify-content:center;">Get in Touch</a>
+        </div>
+
+        <!-- Cash/cheque -->
+        <div class="give-card">
+          <div class="give-icon">💷</div>
+          <div class="give-title">Cash or Cheque</div>
+          <div class="give-desc">Place your gift in an envelope during the Sunday morning offering, or hand it to a member of the team.</div>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.6;">Cheques should be made payable to <strong style="color:var(--deep);">Kings Heath Elim Church</strong>.</p>
+        </div>
+
+        <!-- Gift Aid -->
+        <div class="give-card">
+          <div class="give-icon">📋</div>
+          <div class="give-title">Gift Aid</div>
+          <div class="give-desc">If you're a UK taxpayer, Gift Aid means we can claim an extra 25p for every £1 you give — at no cost to you.</div>
+          <a href="contact.html" class="btn btn-ghost" style="width:100%; justify-content:center;">Request a Form</a>
+        </div>
+
+      </div>
+
+      <!-- NOTE about bank details -->
+
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>injectNav('support'); injectFooter(false);</script>
+</body>
+</html>

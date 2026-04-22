@@ -78,8 +78,19 @@ function injectNav(activePage) {
 
   document.querySelectorAll('.nav-dropdown').forEach(dd => {
     const menu = dd.querySelector('.nav-dropdown-menu');
-    dd.addEventListener('mouseenter', () => menu.classList.add('open'));
-    dd.addEventListener('mouseleave', () => menu.classList.remove('open'));
+    let closeTimer;
+
+    dd.addEventListener('mouseenter', () => {
+      clearTimeout(closeTimer);
+      menu.classList.add('open');
+    });
+    dd.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
+    });
+    menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+    menu.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
+    });
     dd.querySelector('.nav-dropdown-btn').addEventListener('click', () => menu.classList.toggle('open'));
   });
 }

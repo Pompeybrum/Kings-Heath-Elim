@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Week 2",
+      title: "Holy Spirit Course — Week 3",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "19 Apr 2026",
-      scripture: "Acts 2:1-4",
+      date: "26 Apr 2026",
+      scripture: "John 16:7-15",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: "dQw4w9WgXcQ",
       hasNotes: false,
@@ -51,12 +51,24 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
+      title: "Holy Spirit Course — Week 2",
+      series: "Holy Spirit Course",
+      speaker: "Video Course",
+      date: "19 Apr 2026",
+      scripture: "Acts 2:1-4",
+      verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
+      youtubeId: "dQw4w9WgXcQ",
+      hasNotes: false,
+      notesHref: null
+    },
+    {
+      id: "s3",
       title: "Holy Spirit Course — Week 1",
       series: "Holy Spirit Course",
       speaker: "Video Course",
       date: "12 Apr 2026",
       scripture: "John 14:15-17",
-      verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
+      verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: "dQw4w9WgXcQ",
       hasNotes: false,
       notesHref: null
@@ -67,6 +79,21 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "26",
+      month: "Apr",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Holy Spirit Course Week 3",
+      songs: [
+        { title: "Bless God",              highlight: true,  artist: "Brandon Lake / Brooke Ligertwood", youtubeId: "zSW5g5KsN7s" },
+        { title: "His Mercy is More",      highlight: false, artist: "Matt Boswell & Matt Papa",         youtubeId: "hxOApooUSFI" },
+        { title: "How Great is Our God",   highlight: true,  artist: "Chris Tomlin",                    youtubeId: "b69CcVs8pMc" },
+        { title: "How Great Thou Art",     highlight: false, artist: "Classic Hymn",                    youtubeId: "kSfTnv9NvV8" },
+        { title: "Trust in God",           highlight: false, artist: "Elevation Worship",               youtubeId: "QS04WbSnxok" }
+      ]
+    },
+    {
+      id: "wl2",
       date: "19",
       month: "Apr",
       year: "2026",
@@ -81,7 +108,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl2",
+      id: "wl3",
       date: "5",
       month: "Apr",
       year: "2026",

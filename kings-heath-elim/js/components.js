@@ -78,29 +78,34 @@ function injectNav(activePage) {
   const el = document.getElementById('nav-placeholder');
   if (el) el.outerHTML = html;
 
-  const hamburger = document.getElementById('nav-hamburger');
-  const drawer = document.getElementById('nav-drawer');
-  if (hamburger && drawer) {
-    hamburger.addEventListener('click', () => drawer.classList.toggle('open'));
-  }
+  // Use setTimeout to ensure DOM has updated before attaching events
+  setTimeout(() => {
+    const hamburger = document.getElementById('nav-hamburger');
+    const drawer = document.getElementById('nav-drawer');
+    if (hamburger && drawer) {
+      hamburger.addEventListener('click', () => {
+        drawer.classList.toggle('open');
+      });
+    }
 
-  document.querySelectorAll('.nav-dropdown').forEach(dd => {
-    const menu = dd.querySelector('.nav-dropdown-menu');
-    let closeTimer;
+    document.querySelectorAll('.nav-dropdown').forEach(dd => {
+      const menu = dd.querySelector('.nav-dropdown-menu');
+      let closeTimer;
 
-    dd.addEventListener('mouseenter', () => {
-      clearTimeout(closeTimer);
-      menu.classList.add('open');
+      dd.addEventListener('mouseenter', () => {
+        clearTimeout(closeTimer);
+        menu.classList.add('open');
+      });
+      dd.addEventListener('mouseleave', () => {
+        closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
+      });
+      menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+      menu.addEventListener('mouseleave', () => {
+        closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
+      });
+      dd.querySelector('.nav-dropdown-btn').addEventListener('click', () => menu.classList.toggle('open'));
     });
-    dd.addEventListener('mouseleave', () => {
-      closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
-    });
-    menu.addEventListener('mouseenter', () => clearTimeout(closeTimer));
-    menu.addEventListener('mouseleave', () => {
-      closeTimer = setTimeout(() => menu.classList.remove('open'), 200);
-    });
-    dd.querySelector('.nav-dropdown-btn').addEventListener('click', () => menu.classList.toggle('open'));
-  });
+  }, 0);
 }
 
 function injectFooter(isRoot) {

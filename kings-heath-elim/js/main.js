@@ -130,13 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
     // Embeds the church's YouTube channel live stream
     container.innerHTML = `
-      <div class="stream-embed">
-        <iframe
-          src="https://www.youtube.com/embed/live_stream?channel=${CHURCH_DATA.church.youtubeChannelId}&autoplay=0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          title="Kings Heath Elim Live Stream">
-        </iframe>
+      <div style="background:var(--pompey-surface,#0D1050); border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);">
+        <div style="aspect-ratio:16/9; background:#0a0a0a; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; padding:32px;">
+          <div style="font-size:56px;">▶</div>
+          <div style="text-align:center;">
+            <div style="font-family:var(--font-display); font-size:24px; color:white; margin-bottom:8px;">Watch Us Live on YouTube</div>
+            <div style="font-size:14px; color:rgba(255,255,255,0.6); margin-bottom:24px;">Every Sunday at 10:30am — join us live or catch up any time</div>
+            <a href="${CHURCH_DATA.church.youtubeChannel}" target="_blank" rel="noopener"
+               style="display:inline-flex; align-items:center; gap:10px; background:#FF0000; color:white; padding:12px 28px; border-radius:50px; font-size:14px; font-weight:700; text-decoration:none; letter-spacing:0.5px;">
+              ▶ &nbsp;Go to Our YouTube Channel
+            </a>
+          </div>
+        </div>
       </div>
       <div class="stream-meta">
         <span class="stream-badge stream-badge-live">Live Sundays 10:30am</span>

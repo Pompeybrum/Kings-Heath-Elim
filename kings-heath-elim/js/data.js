@@ -45,7 +45,7 @@ const CHURCH_DATA = {
       date: "26 Apr 2026",
       scripture: "John 16:7-15",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
-      youtubeId: "dQw4w9WgXcQ",
+      youtubeId: null,
       hasNotes: false,
       notesHref: null
     },
@@ -57,7 +57,7 @@ const CHURCH_DATA = {
       date: "19 Apr 2026",
       scripture: "Acts 2:1-4",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
-      youtubeId: "dQw4w9WgXcQ",
+      youtubeId: null,
       hasNotes: false,
       notesHref: null
     },
@@ -69,7 +69,7 @@ const CHURCH_DATA = {
       date: "12 Apr 2026",
       scripture: "John 14:15-17",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
-      youtubeId: "dQw4w9WgXcQ",
+      youtubeId: null,
       hasNotes: false,
       notesHref: null
     }

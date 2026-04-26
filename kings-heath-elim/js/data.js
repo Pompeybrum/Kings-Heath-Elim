@@ -15,7 +15,7 @@ const CHURCH_DATA = {
     email: "clairekhelim@gmail.com",
     phone: "0121 444 2550",
     youtubeChannel: "https://www.youtube.com/@KingsHeathElimChurch-dm5ti",
-    youtubeChannelId: "KingsHeathElimChurch-dm5ti",
+    youtubeChannelId: "UC5w7vYFMhoDL4iO5igWysVw",
     churchPhoto: "../images/church.jpg"
   },
 

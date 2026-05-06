@@ -34,10 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="sermon-card">
         <div class="sermon-card-thumb" style="${s.verseImage ? `background-image:url('${s.verseImage}'); background-size:cover; background-position:center;` : ''}">
           ${s.verseImage ? '<div style="position:absolute;inset:0;background:rgba(28,43,58,0.45);border-radius:0;"></div>' : ''}
-          ${s.youtubeId ? `
-            <a href="https://www.youtube.com/watch?v=${s.youtubeId}" target="_blank" rel="noopener" aria-label="Watch ${s.title}" style="position:relative;z-index:1;">
-              <div class="sermon-play-btn">▶</div>
-            </a>` : ''}
+          <a href="https://www.youtube.com/watch?v=${s.youtubeId}" target="_blank" rel="noopener" aria-label="Watch ${s.title}" style="position:relative;z-index:1;">
+            <div class="sermon-play-btn">▶</div>
+          </a>
           ${s.verseImage ? `<div style="position:absolute;bottom:12px;left:12px;right:12px;z-index:1;font-size:11px;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,0.9);font-style:italic;">${s.scripture}</div>` : ''}
         </div>
         <div class="sermon-card-body">

@@ -51,9 +51,9 @@ function injectNav(activePage) {
           </div>
         </div>
         <button class="nav-cta" onclick="location.href='${prefix}pages/contact.html'">Plan Your Visit</button>
-        <label class="nav-hamburger" onclick="(function(){var d=document.getElementById('nav-drawer');d.classList.toggle('open');})()" aria-label="Menu">
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
-        </label>
+        </button>
       </div>
       <div class="nav-drawer" id="nav-drawer">
         <a href="${prefix}index.html">Home</a>

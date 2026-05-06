@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Week 3",
+      title: "Holy Spirit Course — Week 4",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "26 Apr 2026",
-      scripture: "John 16:7-15",
+      date: "4 May 2026",
+      scripture: "Romans 8:26-27",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -51,11 +51,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
-      title: "Holy Spirit Course — Week 2",
+      title: "Holy Spirit Course — Week 3",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "19 Apr 2026",
-      scripture: "Acts 2:1-4",
+      date: "26 Apr 2026",
+      scripture: "John 16:7-15",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -63,11 +63,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s3",
-      title: "Holy Spirit Course — Week 1",
+      title: "Holy Spirit Course — Week 2",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "12 Apr 2026",
-      scripture: "John 14:15-17",
+      date: "19 Apr 2026",
+      scripture: "Acts 2:1-4",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -79,47 +79,62 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "4",
+      month: "May",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Holy Spirit Course Week 4",
+      songs: [
+        { title: "Praise",                highlight: true,  artist: "Elevation Worship",     youtubeId: "raFnjGVkHe8" },
+        { title: "Graves into Gardens",   highlight: false, artist: "Elevation Worship",     youtubeId: "KwX1f2gYKZ4" },
+        { title: "Here I Am to Worship",  highlight: true,  artist: "Tim Hughes",            youtubeId: "b_KNvkk2G-Y" },
+        { title: "Build My Life",         highlight: false, artist: "Pat Barrett",           youtubeId: "Z32HiCoFzlU" },
+        { title: "In Christ Alone",       highlight: false, artist: "Keith & Kristyn Getty", youtubeId: "mshz89vfK3Q" }
+      ]
+    },
+    {
+      id: "wl2",
       date: "26",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 3",
       songs: [
-        { title: "Bless God",              highlight: true,  artist: "Brandon Lake / Brooke Ligertwood", youtubeId: "zSW5g5KsN7s" },
-        { title: "His Mercy is More",      highlight: false, artist: "Matt Boswell & Matt Papa",         youtubeId: "hxOApooUSFI" },
-        { title: "How Great is Our God",   highlight: true,  artist: "Chris Tomlin",                    youtubeId: "b69CcVs8pMc" },
-        { title: "How Great Thou Art",     highlight: false, artist: "Classic Hymn",                    youtubeId: "kSfTnv9NvV8" },
-        { title: "Trust in God",           highlight: false, artist: "Elevation Worship",               youtubeId: "QS04WbSnxok" }
+        { title: "Bless God",              highlight: true,  artist: "Brandon Lake",       youtubeId: "zSW5g5KsN7s" },
+        { title: "His Mercy is More",      highlight: false, artist: "Matt Boswell",       youtubeId: "hxOApooUSFI" },
+        { title: "How Great is Our God",   highlight: true,  artist: "Chris Tomlin",       youtubeId: "b_KNvkk2G-Y" },
+        { title: "How Great Thou Art",     highlight: false, artist: "Classic Hymn",       youtubeId: "kSfTnv9NvV8" },
+        { title: "Trust in God",           highlight: false, artist: "Elevation Worship",  youtubeId: "QS04WbSnxok" }
       ]
     },
     {
-      id: "wl2",
+      id: "wl3",
       date: "19",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 2",
       songs: [
-        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",      youtubeId: "hVWBt8bfmCs" },
-        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",      youtubeId: "IoezWBPGRAc" },
-        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",       youtubeId: "IkHgxKemCRk" },
-        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",  youtubeId: "raFnjGVkHe8" },
-        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith",   youtubeId: "GGFeo08LkcY" }
+        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",     youtubeId: "hVWBt8bfmCs" },
+        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",    youtubeId: "IoezWBPGRAc" },
+        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",     youtubeId: "IkHgxKemCRk" },
+        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",youtubeId: "raFnjGVkHe8" },
+        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith", youtubeId: "GGFeo08LkcY" }
       ]
     },
     {
-      id: "wl3",
+      id: "wl4",
       date: "5",
       month: "Apr",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 1",
       songs: [
-        { title: "Happy Day",               highlight: true,  artist: "Tim Hughes",         youtubeId: "BOiIW8nrw5g" },
-        { title: "Praise",                  highlight: false, artist: "Elevation Worship",  youtubeId: "raFnjGVkHe8" },
-        { title: "This is Amazing Grace",   highlight: false, artist: "Phil Wickham",       youtubeId: "XFRjr_x-yxU" },
-        { title: "King of Kings",           highlight: true,  artist: "Hillsong Worship",   youtubeId: "dQl4izxPeNU" },
-        { title: "Trust in God",            highlight: false, artist: "Elevation Worship",  youtubeId: "QS04WbSnxok" }
+        { title: "Happy Day",               highlight: true,  artist: "Tim Hughes",        youtubeId: "BOiIW8nrw5g" },
+        { title: "Praise",                  highlight: false, artist: "Elevation Worship", youtubeId: "raFnjGVkHe8" },
+        { title: "This is Amazing Grace",   highlight: false, artist: "Phil Wickham",      youtubeId: "XFRjr_x-yxU" },
+        { title: "King of Kings",           highlight: true,  artist: "Hillsong Worship",  youtubeId: "dQl4izxPeNU" },
+        { title: "Trust in God",            highlight: false, artist: "Elevation Worship", youtubeId: "QS04WbSnxok" }
       ]
     }
   ],
@@ -135,7 +150,7 @@ const CHURCH_DATA = {
       tempo: "Mid-tempo",
       tags: ["Worship", "Contemporary"],
       notes: "Our newest song — we're learning this together right now. Listen through the week and come ready to sing on Sunday!",
-      addedDate: "20 Apr 2026"
+      addedDate: "26 Apr 2026"
     },
     {
       id: "ns1",
@@ -145,8 +160,8 @@ const CHURCH_DATA = {
       key: "G",
       tempo: "Slow",
       tags: ["Worship", "Praise"],
-      notes: "We're learning this one together — great to listen to at home before Sunday.",
-      addedDate: "13 Apr 2026"
+      notes: "A beautiful song of adoration — listen along at home to get familiar with the melody.",
+      addedDate: "19 Apr 2026"
     },
     {
       id: "ns2",
@@ -157,7 +172,7 @@ const CHURCH_DATA = {
       tempo: "Mid-tempo",
       tags: ["Praise", "Contemporary"],
       notes: "Powerful declaration song. The chorus is very singable once you know it.",
-      addedDate: "6 Apr 2026"
+      addedDate: "5 Apr 2026"
     },
     {
       id: "ns3",
@@ -168,11 +183,11 @@ const CHURCH_DATA = {
       tempo: "Mid-tempo",
       tags: ["Worship", "Devotional"],
       notes: "A beautiful reminder of God's faithfulness — already a firm favourite.",
-      addedDate: "30 Mar 2026"
+      addedDate: "19 Apr 2026"
     }
   ],
 
-  /* ---- Weekly Regular Events (term time only) ---- */
+  /* ---- Weekly Regular Events (term time only unless stated) ---- */
   weeklyEvents: [
     {
       id: "we0",
@@ -185,24 +200,33 @@ const CHURCH_DATA = {
     },
     {
       id: "we1",
-      day: "Wed",
-      time: "9:30 – 11:00am",
-      type: "Families",
-      title: "Rainbow Stay & Play",
-      desc: "A fun drop-in for babies, toddlers and their parents or carers. Come for play, chat and a cuppa!",
-      icon: "🌈"
+      day: "Tue",
+      time: "9:00am",
+      type: "Community",
+      title: "Food Bank Breakfast",
+      desc: "2nd Tuesday of each month (3rd Tuesday in May). No session in August. Free breakfast — everyone welcome.",
+      icon: "🍳"
     },
     {
       id: "we2",
       day: "Wed",
-      time: "6:00 – 7:00pm",
-      type: "Children",
-      title: "JK's Kids Club",
-      desc: "A brilliant weekly club for children with games, crafts and stories.",
-      icon: "⭐"
+      time: "9:30 – 11:00am",
+      type: "Families",
+      title: "Rainbow Stay & Play",
+      desc: "A fun drop-in for babies, toddlers and their parents or carers. Come for play, chat and a cuppa! Term time only.",
+      icon: "🌈"
     },
     {
       id: "we3",
+      day: "Wed",
+      time: "6:00 – 7:00pm",
+      type: "Children",
+      title: "JK's Kids Club",
+      desc: "A brilliant weekly club for children with games, crafts and stories. Term time only.",
+      icon: "⭐"
+    },
+    {
+      id: "we4",
       day: "Thu",
       time: "10:00 – 11:00am",
       type: "Prayer",
@@ -211,22 +235,13 @@ const CHURCH_DATA = {
       icon: "🙏"
     },
     {
-      id: "we4",
+      id: "we5",
       day: "Fri",
       time: "7:30 – 9:30pm",
       type: "Youth",
       title: "Youth Club",
-      desc: "A great space for young people to hang out, have fun and build friendships.",
+      desc: "A great space for young people to hang out, have fun and build friendships. Term time only.",
       icon: "🎮"
-    },
-    {
-      id: "we5",
-      day: "Tue",
-      time: "9:00am",
-      type: "Community",
-      title: "Food Bank Breakfast",
-      desc: "2nd Tuesday of each month (3rd Tuesday in May). No session in August. Free breakfast — everyone welcome.",
-      icon: "🍳"
     }
   ],
 

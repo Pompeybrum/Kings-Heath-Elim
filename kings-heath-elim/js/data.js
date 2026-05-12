@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Week 4",
+      title: "Holy Spirit Course — Week 5",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "4 May 2026",
-      scripture: "Romans 8:26-27",
+      date: "10 May 2026",
+      scripture: "1 Corinthians 12:4-11",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -51,11 +51,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
-      title: "Holy Spirit Course — Week 3",
+      title: "Holy Spirit Course — Week 4",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "26 Apr 2026",
-      scripture: "John 16:7-15",
+      date: "4 May 2026",
+      scripture: "Romans 8:26-27",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -63,11 +63,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s3",
-      title: "Holy Spirit Course — Week 2",
+      title: "Holy Spirit Course — Week 3",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "19 Apr 2026",
-      scripture: "Acts 2:1-4",
+      date: "26 Apr 2026",
+      scripture: "John 16:7-15",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -79,6 +79,21 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "10",
+      month: "May",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Holy Spirit Course Week 5",
+      songs: [
+        { title: "My Life is in You",    highlight: true,  artist: "Daniel Gardner",            youtubeId: "DL_wL7h5Xy8" },
+        { title: "Great Are You Lord",   highlight: false, artist: "All Sons & Daughters",       youtubeId: "2qUOHjnDIFs" },
+        { title: "Gratitude",            highlight: true,  artist: "Benjamin William Hastings",  youtubeId: "mE9UzNn2J5o" },
+        { title: "Praise (Be Lifted Up)",highlight: false, artist: "Elevation Worship",          youtubeId: "raFnjGVkHe8" },
+        { title: "Sovereign Over Us",    highlight: false, artist: "Aaron Keyes",                youtubeId: "VPkMbhydU9I" }
+      ]
+    },
+    {
+      id: "wl2",
       date: "4",
       month: "May",
       year: "2026",
@@ -93,7 +108,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl2",
+      id: "wl3",
       date: "26",
       month: "Apr",
       year: "2026",
@@ -108,7 +123,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl3",
+      id: "wl4",
       date: "19",
       month: "Apr",
       year: "2026",
@@ -123,7 +138,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl4",
+      id: "wl5",
       date: "5",
       month: "Apr",
       year: "2026",

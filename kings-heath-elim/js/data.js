@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Week 5",
+      title: "Holy Spirit Course — Week 6",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "10 May 2026",
-      scripture: "1 Corinthians 12:4-11",
+      date: "17 May 2026",
+      scripture: "Galatians 5:22-23",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -51,11 +51,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
-      title: "Holy Spirit Course — Week 4",
+      title: "Holy Spirit Course — Week 5",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "4 May 2026",
-      scripture: "Romans 8:26-27",
+      date: "10 May 2026",
+      scripture: "1 Corinthians 12:4-11",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -63,11 +63,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s3",
-      title: "Holy Spirit Course — Week 3",
+      title: "Holy Spirit Course — Week 4",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "26 Apr 2026",
-      scripture: "John 16:7-15",
+      date: "4 May 2026",
+      scripture: "Romans 8:26-27",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -79,6 +79,21 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "17",
+      month: "May",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Holy Spirit Course Week 6",
+      songs: [
+        { title: "Praise",                         highlight: true,  artist: "Elevation Worship",    youtubeId: "raFnjGVkHe8" },
+        { title: "Great Things (Hero of Heaven)",  highlight: false, artist: "Citipointe Worship",   youtubeId: "A4NnuKVCv0Q" },
+        { title: "When I Look Into Your Holiness", highlight: true,  artist: "Wayne & Cathy Perrin", youtubeId: "VJvRhmfVUNE" },
+        { title: "Your Presence is Heaven",        highlight: false, artist: "Israel Houghton",      youtubeId: "jxJsDIhs9MU" },
+        { title: "Trust in God",                   highlight: false, artist: "Elevation Worship",    youtubeId: "QS04WbSnxok" }
+      ]
+    },
+    {
+      id: "wl2",
       date: "10",
       month: "May",
       year: "2026",
@@ -93,7 +108,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl2",
+      id: "wl3",
       date: "4",
       month: "May",
       year: "2026",
@@ -108,7 +123,7 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl3",
+      id: "wl4",
       date: "26",
       month: "Apr",
       year: "2026",
@@ -123,9 +138,9 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl4",
-      date: "19",
-      month: "Apr",
+      id: "wl5",
+      date: "10",
+      month: "May",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 2",
@@ -135,21 +150,6 @@ const CHURCH_DATA = {
         { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",     youtubeId: "IkHgxKemCRk" },
         { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",youtubeId: "raFnjGVkHe8" },
         { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith", youtubeId: "GGFeo08LkcY" }
-      ]
-    },
-    {
-      id: "wl5",
-      date: "5",
-      month: "Apr",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 1",
-      songs: [
-        { title: "Happy Day",               highlight: true,  artist: "Tim Hughes",        youtubeId: "BOiIW8nrw5g" },
-        { title: "Praise",                  highlight: false, artist: "Elevation Worship", youtubeId: "raFnjGVkHe8" },
-        { title: "This is Amazing Grace",   highlight: false, artist: "Phil Wickham",      youtubeId: "XFRjr_x-yxU" },
-        { title: "King of Kings",           highlight: true,  artist: "Hillsong Worship",  youtubeId: "dQl4izxPeNU" },
-        { title: "Trust in God",            highlight: false, artist: "Elevation Worship", youtubeId: "QS04WbSnxok" }
       ]
     }
   ],

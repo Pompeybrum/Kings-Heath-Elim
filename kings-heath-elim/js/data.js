@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Week 6",
+      title: "Holy Spirit Course — Final Session",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "17 May 2026",
-      scripture: "Galatians 5:22-23",
+      date: "31 May 2026",
+      scripture: "Acts 1:8",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -51,11 +51,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
-      title: "Holy Spirit Course — Week 5",
+      title: "The Unexhausted Blast",
       series: "Holy Spirit Course",
-      speaker: "Video Course",
-      date: "10 May 2026",
-      scripture: "1 Corinthians 12:4-11",
+      speaker: "Pastor Claire",
+      date: "24 May 2026",
+      scripture: "Acts 2:1-4 · Galatians 5:25",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -63,11 +63,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s3",
-      title: "Holy Spirit Course — Week 4",
+      title: "Holy Spirit Course — Week 6",
       series: "Holy Spirit Course",
       speaker: "Video Course",
-      date: "4 May 2026",
-      scripture: "Romans 8:26-27",
+      date: "17 May 2026",
+      scripture: "Galatians 5:22-23",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -79,6 +79,36 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "31",
+      month: "May",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Holy Spirit Course — Final Session",
+      songs: [
+        { title: "Forever God is Faithful",       highlight: true,  artist: "Kari Jobe",            youtubeId: "huFra1mnIVE" },
+        { title: "Great Are You Lord",             highlight: false, artist: "All Sons & Daughters",  youtubeId: "2qUOHjnDIFs" },
+        { title: "Gratitude",                      highlight: true,  artist: "Benjamin W. Hastings",  youtubeId: "mE9UzNn2J5o" },
+        { title: "Good Good Father",               highlight: false, artist: "Chris Tomlin",          youtubeId: "qlsQrycKKsY" },
+        { title: "Great is the Lord Most Worthy",  highlight: false, artist: "Michael W. Smith",      youtubeId: "YVL0aka7Bho" }
+      ]
+    },
+    {
+      id: "wl2",
+      date: "24",
+      month: "May",
+      year: "2026",
+      service: "Morning Service",
+      theme: "The Unexhausted Blast",
+      songs: [
+        { title: "Trading My Sorrows",   highlight: true,  artist: "Darrell Evans",         youtubeId: "P4t7HXcJsD4" },
+        { title: "Your Love Never Fails",highlight: false, artist: "Jesus Culture",          youtubeId: "IoezWBPGRAc" },
+        { title: "Gratitude",            highlight: true,  artist: "Benjamin W. Hastings",   youtubeId: "mE9UzNn2J5o" },
+        { title: "Holy Forever",         highlight: false, artist: "Chris Tomlin",           youtubeId: "IkHgxKemCRk" },
+        { title: "Alpha and Omega",      highlight: false, artist: "Israel & New Breed",     youtubeId: "EfPJ4j5P5X8" }
+      ]
+    },
+    {
+      id: "wl3",
       date: "17",
       month: "May",
       year: "2026",
@@ -93,63 +123,33 @@ const CHURCH_DATA = {
       ]
     },
     {
-      id: "wl2",
+      id: "wl4",
       date: "10",
       month: "May",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 5",
       songs: [
-        { title: "My Life is in You",    highlight: true,  artist: "Daniel Gardner",            youtubeId: "DL_wL7h5Xy8" },
-        { title: "Great Are You Lord",   highlight: false, artist: "All Sons & Daughters",       youtubeId: "2qUOHjnDIFs" },
-        { title: "Gratitude",            highlight: true,  artist: "Benjamin William Hastings",  youtubeId: "mE9UzNn2J5o" },
-        { title: "Praise (Be Lifted Up)",highlight: false, artist: "Elevation Worship",          youtubeId: "raFnjGVkHe8" },
-        { title: "Sovereign Over Us",    highlight: false, artist: "Aaron Keyes",                youtubeId: "VPkMbhydU9I" }
+        { title: "My Life is in You",     highlight: true,  artist: "Daniel Gardner",           youtubeId: "DL_wL7h5Xy8" },
+        { title: "Great Are You Lord",    highlight: false, artist: "All Sons & Daughters",      youtubeId: "2qUOHjnDIFs" },
+        { title: "Gratitude",             highlight: true,  artist: "Benjamin W. Hastings",      youtubeId: "mE9UzNn2J5o" },
+        { title: "Praise (Be Lifted Up)", highlight: false, artist: "Elevation Worship",         youtubeId: "raFnjGVkHe8" },
+        { title: "Sovereign Over Us",     highlight: false, artist: "Aaron Keyes",               youtubeId: "VPkMbhydU9I" }
       ]
     },
     {
-      id: "wl3",
+      id: "wl5",
       date: "4",
       month: "May",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course Week 4",
       songs: [
-        { title: "Praise",                highlight: true,  artist: "Elevation Worship",     youtubeId: "raFnjGVkHe8" },
-        { title: "Graves into Gardens",   highlight: false, artist: "Elevation Worship",     youtubeId: "KwX1f2gYKZ4" },
-        { title: "Here I Am to Worship",  highlight: true,  artist: "Tim Hughes",            youtubeId: "b_KNvkk2G-Y" },
-        { title: "Build My Life",         highlight: false, artist: "Pat Barrett",           youtubeId: "Z32HiCoFzlU" },
-        { title: "In Christ Alone",       highlight: false, artist: "Keith & Kristyn Getty", youtubeId: "mshz89vfK3Q" }
-      ]
-    },
-    {
-      id: "wl4",
-      date: "26",
-      month: "Apr",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 3",
-      songs: [
-        { title: "Bless God",              highlight: true,  artist: "Brandon Lake",       youtubeId: "zSW5g5KsN7s" },
-        { title: "His Mercy is More",      highlight: false, artist: "Matt Boswell",       youtubeId: "hxOApooUSFI" },
-        { title: "How Great is Our God",   highlight: true,  artist: "Chris Tomlin",       youtubeId: "b_KNvkk2G-Y" },
-        { title: "How Great Thou Art",     highlight: false, artist: "Classic Hymn",       youtubeId: "kSfTnv9NvV8" },
-        { title: "Trust in God",           highlight: false, artist: "Elevation Worship",  youtubeId: "QS04WbSnxok" }
-      ]
-    },
-    {
-      id: "wl5",
-      date: "10",
-      month: "May",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 2",
-      songs: [
-        { title: "Holy is the Lord",          highlight: true,  artist: "Chris Tomlin",     youtubeId: "hVWBt8bfmCs" },
-        { title: "Your Love Never Fails",     highlight: false, artist: "Jesus Culture",    youtubeId: "IoezWBPGRAc" },
-        { title: "Holy Forever",              highlight: true,  artist: "Chris Tomlin",     youtubeId: "IkHgxKemCRk" },
-        { title: "Praise (Be Lifted Up)",     highlight: false, artist: "Elevation Worship",youtubeId: "raFnjGVkHe8" },
-        { title: "This is the Air I Breathe", highlight: false, artist: "Michael W. Smith", youtubeId: "GGFeo08LkcY" }
+        { title: "Praise",               highlight: true,  artist: "Elevation Worship",     youtubeId: "raFnjGVkHe8" },
+        { title: "Graves into Gardens",  highlight: false, artist: "Elevation Worship",     youtubeId: "KwX1f2gYKZ4" },
+        { title: "Here I Am to Worship", highlight: true,  artist: "Tim Hughes",            youtubeId: "b_KNvkk2G-Y" },
+        { title: "Build My Life",        highlight: false, artist: "Pat Barrett",           youtubeId: "Z32HiCoFzlU" },
+        { title: "In Christ Alone",      highlight: false, artist: "Keith & Kristyn Getty", youtubeId: "mshz89vfK3Q" }
       ]
     }
   ],

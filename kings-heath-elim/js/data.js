@@ -39,11 +39,11 @@ const CHURCH_DATA = {
   sermons: [
     {
       id: "s1",
-      title: "Holy Spirit Course — Final Session",
-      series: "Holy Spirit Course",
-      speaker: "Video Course",
-      date: "31 May 2026",
-      scripture: "Acts 1:8",
+      title: "Sunday Preach",
+      series: "Sunday Preaching",
+      speaker: "Pastor Claire",
+      date: "21 Jun 2026",
+      scripture: "",
       verseImage: "https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -51,11 +51,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s2",
-      title: "The Unexhausted Blast",
-      series: "Holy Spirit Course",
+      title: "Sunday Preach",
+      series: "Sunday Preaching",
       speaker: "Pastor Claire",
-      date: "24 May 2026",
-      scripture: "Acts 2:1-4 · Galatians 5:25",
+      date: "14 Jun 2026",
+      scripture: "",
       verseImage: "https://images.unsplash.com/photo-1532153955177-f59af40d6472?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -63,11 +63,11 @@ const CHURCH_DATA = {
     },
     {
       id: "s3",
-      title: "Holy Spirit Course — Week 6",
-      series: "Holy Spirit Course",
-      speaker: "Video Course",
-      date: "17 May 2026",
-      scripture: "Galatians 5:22-23",
+      title: "Guest Preach",
+      series: "Guest Preaching",
+      speaker: "Marty Davison — Elim International Missions",
+      date: "7 Jun 2026",
+      scripture: "",
       verseImage: "https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?w=600&q=80",
       youtubeId: null,
       hasNotes: false,
@@ -79,77 +79,69 @@ const CHURCH_DATA = {
   setlists: [
     {
       id: "wl1",
+      date: "21",
+      month: "Jun",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Sunday Morning Worship",
+      songs: [
+        { title: "Lion and the Lamb",    highlight: true,  artist: "Bethel Music / Leeland", youtubeId: "C9ujBoud26k" },
+        { title: "Who You Say I Am",     highlight: false, artist: "Hillsong Worship",        youtubeId: "lKw6uqtGFfo" },
+        { title: "O Praise the Name",    highlight: true,  artist: "Hillsong Worship",        youtubeId: "7o-mfbvTshw" },
+        { title: "My Jesus My Savior",   highlight: false, artist: "Darlene Zschech",         youtubeId: "KVkdfQMSayc" },
+        { title: "Nothing Else",         highlight: false, artist: "Cody Carnes",             youtubeId: "RG5kF-a42Cc" }
+      ]
+    },
+    {
+      id: "wl2",
+      date: "14",
+      month: "Jun",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Sunday Morning Worship",
+      songs: []
+    },
+    {
+      id: "wl3",
+      date: "7",
+      month: "Jun",
+      year: "2026",
+      service: "Morning Service",
+      theme: "Marty Davison — Guest Speaker",
+      songs: [
+        { title: "Praise",                highlight: true,  artist: "Elevation Worship", youtubeId: "raFnjGVkHe8" },
+        { title: "This is Amazing Grace", highlight: false, artist: "Phil Wickham",      youtubeId: "XFRjr_x-yxU" },
+        { title: "Do it Again",           highlight: false, artist: "Elevation Worship", youtubeId: "ZOBIPb-6PTc" }
+      ]
+    },
+    {
+      id: "wl4",
       date: "31",
       month: "May",
       year: "2026",
       service: "Morning Service",
       theme: "Holy Spirit Course — Final Session",
       songs: [
-        { title: "Forever God is Faithful",       highlight: true,  artist: "Kari Jobe",            youtubeId: "huFra1mnIVE" },
-        { title: "Great Are You Lord",             highlight: false, artist: "All Sons & Daughters",  youtubeId: "2qUOHjnDIFs" },
-        { title: "Gratitude",                      highlight: true,  artist: "Benjamin W. Hastings",  youtubeId: "mE9UzNn2J5o" },
-        { title: "Good Good Father",               highlight: false, artist: "Chris Tomlin",          youtubeId: "qlsQrycKKsY" },
-        { title: "Great is the Lord Most Worthy",  highlight: false, artist: "Michael W. Smith",      youtubeId: "YVL0aka7Bho" }
+        { title: "Forever God is Faithful",      highlight: true,  artist: "Kari Jobe",           youtubeId: "huFra1mnIVE" },
+        { title: "Great Are You Lord",            highlight: false, artist: "All Sons & Daughters", youtubeId: "2qUOHjnDIFs" },
+        { title: "Gratitude",                     highlight: true,  artist: "Benjamin W. Hastings", youtubeId: "mE9UzNn2J5o" },
+        { title: "Good Good Father",              highlight: false, artist: "Chris Tomlin",         youtubeId: "qlsQrycKKsY" },
+        { title: "Great is the Lord Most Worthy", highlight: false, artist: "Michael W. Smith",     youtubeId: "YVL0aka7Bho" }
       ]
     },
     {
-      id: "wl2",
+      id: "wl5",
       date: "24",
       month: "May",
       year: "2026",
       service: "Morning Service",
       theme: "The Unexhausted Blast",
       songs: [
-        { title: "Trading My Sorrows",   highlight: true,  artist: "Darrell Evans",         youtubeId: "P4t7HXcJsD4" },
-        { title: "Your Love Never Fails",highlight: false, artist: "Jesus Culture",          youtubeId: "IoezWBPGRAc" },
-        { title: "Gratitude",            highlight: true,  artist: "Benjamin W. Hastings",   youtubeId: "mE9UzNn2J5o" },
-        { title: "Holy Forever",         highlight: false, artist: "Chris Tomlin",           youtubeId: "IkHgxKemCRk" },
-        { title: "Alpha and Omega",      highlight: false, artist: "Israel & New Breed",     youtubeId: "EfPJ4j5P5X8" }
-      ]
-    },
-    {
-      id: "wl3",
-      date: "17",
-      month: "May",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 6",
-      songs: [
-        { title: "Praise",                         highlight: true,  artist: "Elevation Worship",    youtubeId: "raFnjGVkHe8" },
-        { title: "Great Things (Hero of Heaven)",  highlight: false, artist: "Citipointe Worship",   youtubeId: "A4NnuKVCv0Q" },
-        { title: "When I Look Into Your Holiness", highlight: true,  artist: "Wayne & Cathy Perrin", youtubeId: "VJvRhmfVUNE" },
-        { title: "Your Presence is Heaven",        highlight: false, artist: "Israel Houghton",      youtubeId: "jxJsDIhs9MU" },
-        { title: "Trust in God",                   highlight: false, artist: "Elevation Worship",    youtubeId: "QS04WbSnxok" }
-      ]
-    },
-    {
-      id: "wl4",
-      date: "10",
-      month: "May",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 5",
-      songs: [
-        { title: "My Life is in You",     highlight: true,  artist: "Daniel Gardner",           youtubeId: "DL_wL7h5Xy8" },
-        { title: "Great Are You Lord",    highlight: false, artist: "All Sons & Daughters",      youtubeId: "2qUOHjnDIFs" },
-        { title: "Gratitude",             highlight: true,  artist: "Benjamin W. Hastings",      youtubeId: "mE9UzNn2J5o" },
-        { title: "Praise (Be Lifted Up)", highlight: false, artist: "Elevation Worship",         youtubeId: "raFnjGVkHe8" },
-        { title: "Sovereign Over Us",     highlight: false, artist: "Aaron Keyes",               youtubeId: "VPkMbhydU9I" }
-      ]
-    },
-    {
-      id: "wl5",
-      date: "4",
-      month: "May",
-      year: "2026",
-      service: "Morning Service",
-      theme: "Holy Spirit Course Week 4",
-      songs: [
-        { title: "Praise",               highlight: true,  artist: "Elevation Worship",     youtubeId: "raFnjGVkHe8" },
-        { title: "Graves into Gardens",  highlight: false, artist: "Elevation Worship",     youtubeId: "KwX1f2gYKZ4" },
-        { title: "Here I Am to Worship", highlight: true,  artist: "Tim Hughes",            youtubeId: "b_KNvkk2G-Y" },
-        { title: "Build My Life",        highlight: false, artist: "Pat Barrett",           youtubeId: "Z32HiCoFzlU" },
-        { title: "In Christ Alone",      highlight: false, artist: "Keith & Kristyn Getty", youtubeId: "mshz89vfK3Q" }
+        { title: "Trading My Sorrows",    highlight: true,  artist: "Darrell Evans",        youtubeId: "P4t7HXcJsD4" },
+        { title: "Your Love Never Fails", highlight: false, artist: "Jesus Culture",         youtubeId: "IoezWBPGRAc" },
+        { title: "Gratitude",             highlight: true,  artist: "Benjamin W. Hastings",  youtubeId: "mE9UzNn2J5o" },
+        { title: "Holy Forever",          highlight: false, artist: "Chris Tomlin",          youtubeId: "IkHgxKemCRk" },
+        { title: "Alpha and Omega",       highlight: false, artist: "Israel & New Breed",    youtubeId: "EfPJ4j5P5X8" }
       ]
     }
   ],
